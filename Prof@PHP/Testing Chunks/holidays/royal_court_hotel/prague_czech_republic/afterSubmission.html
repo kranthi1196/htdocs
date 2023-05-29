@@ -1,0 +1,193 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>tzoffers</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<link href="https://emails.holidaybuzz.co.uk/assets/css/admin1/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="https://emails.holidaybuzz.co.uk/assets/css/admin1/style.css" rel="stylesheet" type="text/css" /><link href="https://emails.holidaybuzz.co.uk/assets/css/admin1/skin-blue.min.css" rel="stylesheet" type="text/css" /><link href="https://emails.holidaybuzz.co.uk/assets/css/admin1/dataTables.bootstrap.css" rel="stylesheet" type="text/css" /><link href="https://emails.holidaybuzz.co.uk/assets/css/admin1/datatables/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+<header class="main-header">
+
+<a href="https://emails.holidaybuzz.co.uk/admin/index" class="logo">
+
+<span class="logo-mini"><b>B</b>KN</span>
+
+<span class="logo-lg"><b>SE Travelzoo</b></span> </a>
+
+<nav class="navbar navbar-static-top" role="navigation">
+
+<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"> <span class="sr-only">Toggle navigation</span> </a>
+
+<div class="navbar-custom-menu">
+<ul class="nav navbar-nav">
+
+<li class="dropdown user user-menu">
+
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+<img src="https://emails.holidaybuzz.co.uk/assets/images/user.png" class="user-image" alt="User Image">
+
+<span class="hidden-xs">Saleem </span> </a>
+<ul class="dropdown-menu">
+
+<li class="user-header"> <img src="https://emails.holidaybuzz.co.uk/assets/images/user.png" class="img-circle" alt="User Image">
+<p> Saleem  </p>
+</li>
+<li class="user-footer">
+<div class="pull-left"> <a href="https://emails.holidaybuzz.co.uk/admin/profile" class="btn btn-default btn-flat">Profile</a> </div>
+<div class="pull-right"> <a href="https://emails.holidaybuzz.co.uk/admin/logout" class="btn btn-default btn-flat">Sign out</a> </div>
+</li>
+</ul>
+</li>
+
+</ul>
+</div>
+</nav>
+</header>
+
+<aside class="main-sidebar">
+
+<section class="sidebar">
+
+<div class="user-panel">
+<div class="pull-left image"> <img src="https://emails.holidaybuzz.co.uk/assets/images/user.png" class="img-circle" alt="User Image"> </div>
+<div class="pull-left info">
+<p>Saleem </p>
+
+<a href="#"><i class="fa fa-circle text-success"></i> Online</a> </div>
+</div>
+
+<form action="#" method="get" class="sidebar-form">
+<div class="input-group">
+<input type="text" name="q" class="form-control" placeholder="Search...">
+<span class="input-group-btn">
+<button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+</span> </div>
+</form>
+
+
+<ul class="sidebar-menu">
+
+<li class=""><a href="https://emails.holidaybuzz.co.uk/admin/index"><i class="fa fa-table"></i> <span>Dashboard</span></a></li>
+<li class=""><a href="https://emails.holidaybuzz.co.uk/admin/oursubsdailycsv"><i class="fa fa-table"></i> <span>Daily Subscribers</span></a></li>
+<li class=""><a href="https://emails.holidaybuzz.co.uk/admin/clearCache"><i class="fa fa-table"></i> <span>Clear Cache</span></a></li>
+<li class=""><a href="https://emails.holidaybuzz.co.uk/admin/agents"><i class="fa fa-table"></i> <span>Agents</span></a></li>
+<li class="active"> <a href="https://emails.holidaybuzz.co.uk/admin/travelzoo"><i class="fa fa-list"></i><span>Travel zoo</span></a> </li>
+<li class=""> <a href="https://emails.holidaybuzz.co.uk/admin/travelzoo_images"><i class="fa fa-list"></i><span>Travelzoo Images</span></a> </li>
+<li class=""> <a href="https://emails.holidaybuzz.co.uk/admin/add_resorts"><i class="fa fa-list"></i><span>Travelzoo Resorts</span></a> </li>
+<li class=""> <a href="https://emails.holidaybuzz.co.uk/admin/add_media"><i class="fa fa-list"></i><span>Media Types</span></a> </li>
+<li class=""> <a href="https://emails.holidaybuzz.co.uk/admin/Featuredeals"><i class="fa fa-list"></i><span>Feature Deals</span></a> </li>
+<li class=""> <a href="https://emails.holidaybuzz.co.uk/admin/Bannerdeals"><i class="fa fa-list"></i><span>Banner Deals</span></a> </li>
+<li class=""> <a href="https://emails.holidaybuzz.co.uk/admin/Themedetails"><i class="fa fa-list"></i><span>Theme Details</span></a> </li>
+</ul>
+ 
+</section>
+
+</aside>
+
+<div class="content-wrapper">
+
+<section class="content-header">
+<h1> Travelzoo </h1>
+<ol class="breadcrumb">
+<li><a href="https://emails.holidaybuzz.co.uk/admin/index"><i class="fa fa-dashboard"></i> Home</a></li>
+<li class="active">Travelzoo</li>
+</ol>
+</section>
+
+</section>
+
+<section class="content">
+<div class="row">
+
+<div class="box">
+<div class="box-body">
+<a class="btn btn-info" style="float:right;" href="https://emails.holidaybuzz.co.uk/admin/add_travelzoo">Add New</a>
+<table id="example" class="table table-bordered table-striped">
+<thead>
+<tr>
+<th>Id</th>
+<th>Hotel address</th>
+<th>Hotel name</th>
+<th>Created date </th>
+<th>price</th>
+<th>Edit</th>
+<th>View</th>
+<th>Copy</th>
+<th>Del</th>
+<th>Media</th>
+
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<script language="JavaScript" type="text/javascript">
+function checkDelete(){
+    return confirm('Are you sure?');
+}
+</script> 
+</div>
+
+
+<footer class="main-footer">
+
+
+<strong>Copyright &copy; 2015 <a href="#">bookitnow</a>.</strong> All rights reserved. </footer>
+</div>
+<script type="text/javascript" src="https://emails.holidaybuzz.co.uk/assets/js/jquery.min.js"></script><script type="text/javascript" src="https://emails.holidaybuzz.co.uk/assets/js/bootstrap.min.js"></script><script type="text/javascript" src="https://emails.holidaybuzz.co.uk/assets/js/admin1/app.min.js"></script><script type="text/javascript" src="https://emails.holidaybuzz.co.uk/assets/js/admin1/jquery.dataTables.min.js"></script><script type="text/javascript" src="https://emails.holidaybuzz.co.uk/assets/js/admin1/dataTables.bootstrap.min.js"></script><script type="text/javascript" src="https://emails.holidaybuzz.co.uk/assets/js/admin1/datatables/dataTables.buttons.min.js"></script><script type="text/javascript" src="https://emails.holidaybuzz.co.uk/assets/js/admin1/datatables/jszip.min.js"></script><script type="text/javascript" src="https://emails.holidaybuzz.co.uk/assets/js/admin1/datatables/buttons.html5.min.js"></script>
+<script type="text/javascript">
+            function isNumber(event) {
+                var charCode = (event.which) ? event.which : event.keyCode;
+                if (charCode > 31 && (charCode < 48 || charCode > 57))
+                    return false;
+                return true;
+            }
+            $(function () {
+                if ($(".table").length)
+                    $(".table").not("#example").DataTable({
+                        "scrollX": true,
+                    });
+            });
+
+            function blockCustomTabs(e) {
+                $.blockUI.defaults.css = {};
+                $(e).block({
+                    message: '<div><img src="/images/loader-bar.gif" alt=""  width="225px"/></div>',
+                    overlayCSS: {backgroundColor: '#fff'}
+                });
+            }
+            function unblockCustomTabs(e) {
+                $(e).unblock();
+            }
+
+
+
+        </script>
+<script type="text/javascript">
+            $(function () {
+
+		$("#example").dataTable({
+            "order": [[ 0, "desc" ]],
+	        "processing": true,
+	        "serverSide": true,
+	        "ajax": "https://emails.holidaybuzz.co.uk/admin/travelzoo"
+    	});
+		            })
+
+        </script>
+</body>
+</html>

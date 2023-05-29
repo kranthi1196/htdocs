@@ -1,0 +1,10 @@
+#example_wrapper .row {
+    display: contents;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+}

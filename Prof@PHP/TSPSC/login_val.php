@@ -1,0 +1,53 @@
+<?php
+error_reporting( E_ERROR | E_WARNING | E_PARSE);
+$db_connection = mysqli_connect("localhost","root","","group2_db");
+
+$reg_table_name = "registration_Details";
+
+if(isset($_REQUEST['register'])){
+    header('Location:Registration.php');
+}
+
+if(isset($_REQUEST['login'])){
+
+    $email = $_REQUEST['email_log'];
+    $pass = $_REQUEST['pass_log'];
+
+    if(empty($email)){
+        Print "<script>alert('Email is Required...')</script>";
+    }
+    if(empty($pass)){
+        Print "<script>alert('Password is Required...')</script>";
+    }
+    
+    if(!empty($email) && !empty($pass)){
+
+        $reg_fetch_query = "SELECT * FROM $reg_table_name WHERE email='$email' AND pass='$pass'";
+        $reg_fetch_query_ex = mysqli_query($db_connection, $reg_fetch_query);
+        $row_reg = mysqli_num_rows($reg_fetch_query_ex)>0 ;
+
+        if($reg_data = mysqli_fetch_assoc($reg_fetch_query_ex))
+        {
+            if( $reg_data['email'] == $email && $reg_data['pass'] == $pass ){
+                print "<script>alert('Congratulations!!! You are Successfully Logged In As $reg_data[fname] $reg_data[lname]')</script>";   
+            }
+            else{
+                // This Block is Failed to  Executed
+                print "<script>alert('Your Login Failed...Your Details are not matched with our DB records')</script>";
+            }
+            
+        }
+
+        
+    }/*
+    else{
+        Print "<script>alert('Please Make sure to fill all the Details to Login... ')</script>";
+    }*/
+
+    
+}
+?>
+<!-- 
+    
+
+->

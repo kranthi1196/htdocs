@@ -1,0 +1,36 @@
+
+body{
+    background-color: powderblue;
+    margin:auto;
+}
+form{
+    padding-top:50px;
+    padding-left:auto;
+    padding-right:auto;
+    margin:auto;
+    width:50%;
+}
+fieldset{
+    padding-left:0px;
+    padding-right:auto;
+    margin:auto;
+}
+fieldset>table{
+    padding-left:150px;
+    padding-right:150px; 
+    margin-right:0;
+    display: flex;
+}
+table{
+    margin:auto;
+    border-collapse:collapse;
+}
+center{
+    padding-left:auto;
+    padding-right:auto;
+    margin:auto;
+}
+tr>td{
+    color:darkblue;
+}
+

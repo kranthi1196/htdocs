@@ -1,0 +1,13 @@
+$reg_table_name =
+$reg_table_create =
+$reg_table_status =
+
+$reg_table_insert =
+$tabel_insert_query =
+
+---------------------------
+
+$reg_fetch_query =
+$reg_fetch_query_ex =
+$row_login =
+$reg_data = 

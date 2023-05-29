@@ -1,0 +1,290 @@
+function getSelectBoxText(ctrl)
+{
+	return ctrl.options[ctrl.selectedIndex].text;
+}
+
+function editchecking(notino){
+	if(confirm("Are you sure to edit the details?")){
+	 $.ajax({
+		 type:'GET',
+		 url:'EditChecking'+notino,
+		 success:function(data){
+			 console.log(data);
+			  window.open(data,"_self");
+		 },
+		 error: function (event, jqXHR, ajaxSettings, thrownError){ 
+          	 console.log("no data found");
+           },
+           beforeSend: function( event, ui ) {
+          	 console.log(" ");
+           }
+	 });
+	}
+}
+
+function applicationEditchecking(notino){
+	if(confirm("Are you sure to edit the details?")){
+	 $.ajax({
+		 type:'GET',
+		 url:'CandidateApplicationEditChecking'+notino,
+		 success:function(data){
+			 console.log(data);
+			  window.open(data,"_self");
+		 },
+		 error: function (event, jqXHR, ajaxSettings, thrownError){ 
+          	 console.log("no data found");
+           },
+           beforeSend: function( event, ui ) {
+          	 console.log(" ");
+           }
+	 });
+	}
+}
+
+function validateApplForm(){
+	if(document.getElementById("cpatchaTextBox").value=="" || document.getElementById("cpatchaTextBox").value.length!=6){
+		alert("Enter Valid Captcha");
+		return false;
+	}
+	 var captchaValue = validateCaptcha();
+	 return captchaValue;
+}
+
+function prefValidator(ctrl,loopValue,id, index,displayname) {
+	var ValidStr = "#";
+	//alert("============"+ctrl);
+	//alert(ctrl.value.toString());
+	var ctrlValue = ctrl.value.toString();
+
+	for(var i=1; i <=loopValue; i=i+1) {
+		if(i!=index) {
+			ValidStr = ValidStr+ document.getElementById(id+ i).value.toString()  + "#";
+		}
+	}
+
+	var yy=ValidStr.indexOf("#"+ctrlValue+"#");
+	//alert(yy);
+	//alert("ctrlValue-->"+ctrlValue)
+	if( yy!=-1 && ctrlValue!="0") {
+		alert("This "+displayname+" is already selected");
+		/* swal({
+			title : "Oops!",
+			text : "The Preference is already selected Please select another Preference",
+			icon : "warning"
+		}); */
+		ctrl.value = "0";
+	}
+
+}
+
+function ConfirmOTR(val){
+	if(val=="yes"){
+		document.getElementById("displayApplicationFormBlock").style.display="block";	
+		document.getElementById("displayEditOTRBlock").style.display="none";
+	}else{
+		document.getElementById("displayApplicationFormBlock").style.display="none";
+		document.getElementById("displayEditOTRBlock").style.display="block";
+		
+	}
+}
+
+function displayingcriminaloptions(val){
+	if(val=="Yes"){
+		document.getElementById("displaycoptions").style.display="";	
+	}else{
+		document.getElementById("displaycoptions").style.display="none";
+		document.getElementById("criminalOptions").value="0";
+		
+	}
+}
+function displayingdiscoptions(val){
+	if(val=="Yes"){
+		document.getElementById("displaydisoptions").style.display="";	
+	}else{
+		document.getElementById("displaydisoptions").style.display="none";
+		document.getElementById("disciplinaryOptions").value="0";
+		
+	}
+}
+
+function PreviewCriminalDisciplinary() {
+	
+	
+	var criminal_cases = "";
+	if( document.getElementById("criminal_cases_yes").checked == true) {
+		criminal_cases = "Yes";
+	} else if( document.getElementById("criminal_cases_no").checked == true) {
+		criminal_cases = "No";
+	}
+	document.getElementById("pcriminal_cases").innerHTML = criminal_cases;
+	if(criminal_cases == "Yes") {
+		document.getElementById("pdisplaycoptions").style.display="";
+		document.getElementById("pcriminaloptions").innerHTML= getSelectBoxText(document.getElementById("criminalOptions"));
+	}else{
+		document.getElementById("pdisplaycoptions").style.display="none";
+		document.getElementById("pcriminaloptions").innerHTML= "";
+	
+	}
+	if(document.getElementById('isGovt').value=="YES"){
+	var disciplinary_cases = "";
+	if( document.getElementById("disciplinary_cases_yes").checked == true) {
+		disciplinary_cases = "Yes";
+	} else if( document.getElementById("disciplinary_cases_no").checked == true) {
+		disciplinary_cases = "No";
+	}
+	document.getElementById("pdisciplinary_cases").innerHTML = disciplinary_cases;
+	if(disciplinary_cases == "Yes") {
+		document.getElementById("pdisplaydisoptions").style.display="";
+		document.getElementById("pdisciplinaryoptions").innerHTML= getSelectBoxText(document.getElementById("disciplinaryOptions"));
+	}else{
+		document.getElementById("pdisplaydisoptions").style.display="none";
+		document.getElementById("pdisciplinaryoptions").innerHTML= "";
+	
+	}
+	}
+}
+
+function isAlpha(evt)
+{
+	var charCode = (evt.which) ? evt.which : evt.keyCode;
+	if(charCode >= 65 && charCode <= 90) return true;
+	if(charCode == 32) return true;
+	if(charCode >= 97 && charCode <= 122) return true;
+	if(charCode==8 || charCode==9) return true;
+	//alert(charCode);
+	return false;
+}
+
+function isAlphaNumericKey(evt)
+{
+	var charCode = (evt.which) ? evt.which : evt.keyCode;
+			
+	if(charCode >= 65 && charCode <= 90) return true;
+	if(charCode == 32) return true;
+	if(charCode >= 97 && charCode <= 122) return true;
+	if(charCode==8 || charCode==9) return true;
+	if(charCode > 47 && charCode < 58) return true;
+	
+	return false;
+}
+
+
+function otherthan_symbolsExceptFew(e)
+{
+    var key;
+    var keychar;
+                
+    if (window.event)
+        key = window.event.keyCode;
+    else if (e)
+        key = e.which;
+    else
+        return true;
+                
+    keychar = String.fromCharCode(key);
+    keychar = keychar.toLowerCase();
+                
+    // control keys
+    
+    if ((key==0) || (key==8) || (key==9) || (key==13) || (key==27) || (key==127))
+        return true;
+                
+    // alphas and numbers
+    else if ((("abcdefghijklmnopqrstuvwxyz0123456789-/.,+ ").indexOf(keychar) > -1))
+        return true;
+    else{
+    	alert("Special Characters are not allowed");
+        return false;
+        }
+}
+
+
+function isNumberKey(evt)
+{
+	var charCode = (evt.which) ? evt.which : evt.keyCode;
+	if (charCode > 31 && (charCode < 48 || charCode > 57))
+		return false;
+	return true;
+}
+
+
+function loadMandals(id, val) {
+	if (val != "" && val != "0" && val != "99") {
+		$.post("getMandals?districtAjax=" + val, function(data) {
+			if (data[0][0] == "invalid") {
+				alert(data[0][1]);
+			} else {
+				$("#" + id).find('option').remove().end();
+				$("#" + id).append("<option>Select Mandal</option>");
+				for (var i = 0; i < data.length; i++) {
+					$("#" + id).append("<option value='" + data[i][0] + "'>" + data[i][1]+ "</option>");
+				}
+			}
+		});
+	} else {
+		$("#" + id).find('option').remove().end();
+		$("#" + id).append("<option>Select Mandal</option>");
+		$("#" + id).append("<option value='99999'>OTHER THAN TELANGANA STATE</option>");
+	}
+}
+
+function otherEnableVisibleSelectBox(val, inputtxt){
+	
+	if(val == "99"){
+		document.getElementById(inputtxt).disabled  = false;
+		document.getElementById(inputtxt).style.display = "";
+		document.getElementById(inputtxt).focus();
+		document.getElementById(inputtxt).value = "";
+		
+	}else{
+		//document.getElementById(inputtxt).value = "0";
+		document.getElementById(inputtxt).style.display = "none";
+		document.getElementById(inputtxt).disabled = true;
+		//document.getElementById(inputtxt).value = "0";
+
+	}
+} 
+
+
+function displayOrHideDivs(id,target,value) {
+
+	if(id == value){
+		document.getElementById(target).style.display = "";
+		//document.getElementById("p"+target).style.display = "";
+	}else{
+		document.getElementById(target).value = "";
+		document.getElementById(target).style.display = "none";
+		//document.getElementById("p"+target).style.display = "none";
+
+	}
+}
+
+
+function otherthan_symbolsExceptFew(e)
+{
+    var key;
+    var keychar;
+                
+    if (window.event)
+        key = window.event.keyCode;
+    else if (e)
+        key = e.which;
+    else
+        return true;
+                
+    keychar = String.fromCharCode(key);
+    keychar = keychar.toLowerCase();
+                
+    // control keys
+    
+    if ((key==0) || (key==8) || (key==9) || (key==13) || (key==27) || (key==127))
+        return true;
+                
+    // alphas and numbers
+    else if ((("abcdefghijklmnopqrstuvwxyz0123456789-/.,+ ").indexOf(keychar) > -1))
+        return true;
+    else{
+    	alert("Special Characters are not allowed");
+        return false;
+        }
+}

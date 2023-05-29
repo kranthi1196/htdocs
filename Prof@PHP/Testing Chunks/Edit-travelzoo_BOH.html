@@ -1,0 +1,694 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Edit travelzoo</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link href="https://emails.bestonlineholidays.co.uk/assets/css/admin1/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="https://emails.bestonlineholidays.co.uk/assets/css/admin1/style.css" rel="stylesheet" type="text/css" /><link href="https://emails.bestonlineholidays.co.uk/assets/css/admin1/skin-blue.min.css" rel="stylesheet" type="text/css" />		
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    </head>
+    <body class="hold-transition skin-blue sidebar-mini"> 
+        <div class="wrapper">  
+            <!-- Main Header -->
+            <header class="main-header">		    
+                <!-- Logo --> 
+                <a href="https://emails.bestonlineholidays.co.uk/admin/index" class="logo"> 
+                    <!-- mini logo for sidebar mini 50x50 pixels --> 
+                    <span class="logo-mini"><b>B</b>KN</span> 
+                    <!-- logo for regular state and mobile devices --> 
+                    <span class="logo-lg"><b>BOH Travelzoo</b></span> </a> 			    
+                <!-- Header Navbar -->
+                <nav class="navbar navbar-static-top" role="navigation"> 
+                    <!-- Sidebar toggle button--> 
+                    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"> <span class="sr-only">Toggle navigation</span> </a> 
+                    <!-- Navbar Right Menu -->
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+					<!-- User Account Menu -->
+                            <li class="dropdown user user-menu"> 
+                                <!-- Menu Toggle Button --> 
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+                                    <!-- The user image in the navbar--> 
+                                    <img src="https://emails.bestonlineholidays.co.uk/assets/images/user.png" class="user-image" alt="User Image"> 
+                                    <!-- hidden-xs hides the username on small devices so only the image appears. --> 
+                                    <span class="hidden-xs">Saleem </span> </a>
+                                <ul class="dropdown-menu">
+                                    <!-- The user image in the menu -->
+                                    <li class="user-header"> <img src="https://emails.bestonlineholidays.co.uk/assets/images/user.png" class="img-circle" alt="User Image">
+                                      <p> Saleem  <!-- <small>Member since Nov. 2012</small> --> </p>
+                                    </li>
+                                
+                                    <li class="user-footer">
+                                        <div class="pull-left"> <a href="https://emails.bestonlineholidays.co.uk/admin/profile" class="btn btn-default btn-flat">Profile</a> </div>
+                                        <div class="pull-right"> <a href="https://emails.bestonlineholidays.co.uk/admin/logout" class="btn btn-default btn-flat">Sign out</a> </div>
+                                    </li>
+                                </ul>
+                            </li>
+                    <!-- Control Sidebar Toggle Button -->
+
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar"> 
+
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar"> 
+
+                    <!-- Sidebar user panel (optional) -->
+                    <div class="user-panel">
+                        <div class="pull-left image"> <img src="https://emails.bestonlineholidays.co.uk/assets/images/user.png" class="img-circle" alt="User Image"> </div>
+                        <div class="pull-left info">
+                            <p>Saleem </p>
+                            <!-- Status --> 
+                            <a href="#"><i class="fa fa-circle text-success"></i> Online</a> </div>
+                    </div>
+
+                    <!-- search form (Optional) -->
+                    <form action="#" method="get" class="sidebar-form">
+                        <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+                            </span> </div>
+                    </form>
+                    <!-- /.search form --> 
+
+                    <!-- Sidebar Menu -->
+                    <ul class="sidebar-menu">
+                        <!-- Optionally, you can add icons to the links -->
+
+                                                    <li class=""><a href="https://emails.bestonlineholidays.co.uk/admin/index"><i class="fa fa-table"></i> <span>Dashboard</span></a></li>	        
+                                                        <li class=""><a href="https://emails.bestonlineholidays.co.uk/admin/clearCache"><i class="fa fa-table"></i> <span>Clear Cache</span></a></li>
+                                                        <li class=""><a href="https://emails.bestonlineholidays.co.uk/admin/agents"><i class="fa fa-table"></i> <span>Agents</span></a></li>
+                                                    <li class="active"> <a href="https://emails.bestonlineholidays.co.uk/admin/travelzoo"><i class="fa fa-list"></i><span>Travel zoo</span></a> </li>
+                                                        <li class=""> <a href="https://emails.bestonlineholidays.co.uk/admin/travelzoo_images"><i class="fa fa-list"></i><span>Travelzoo Images</span></a> </li>
+                                                        <li class=""> <a href="https://emails.bestonlineholidays.co.uk/admin/add_resorts"><i class="fa fa-list"></i><span>Travelzoo Resorts</span></a> </li>
+                                                        <li class=""> <a href="https://emails.bestonlineholidays.co.uk/admin/add_media"><i class="fa fa-list"></i><span>Media Types</span></a> </li>
+                                                        <li class=""> <a href="https://emails.bestonlineholidays.co.uk/admin/Featuredeals"><i class="fa fa-list"></i><span>Feature Deals</span></a> </li>
+                                                        <li class=""> <a href="https://emails.bestonlineholidays.co.uk/admin/Bannerdeals"><i class="fa fa-list"></i><span>Banner Deals</span></a> </li>
+                                                        <li class=""> <a href="https://emails.bestonlineholidays.co.uk/admin/Themedetails"><i class="fa fa-list"></i><span>Theme Details</span></a> </li>
+                            	
+
+                    </ul>
+                    <!-- /.sidebar-menu --> 
+                </section>
+                <!-- /.sidebar --> 
+            </aside>
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">    
+                <!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>Edit Travelzoo offer</h1>
+    <ol class="breadcrumb">
+        <li><a href="https://emails.bestonlineholidays.co.uk/admin/index"><i class="fa fa-dashboard"></i>Home</a></li>
+        <li><a href="https://emails.bestonlineholidays.co.uk/admin/destinations">Static Pages</a></li>
+        <li class="active">Add Static Page</li>
+    </ol>
+</section>
+<section class="content" style="background:#fff;">
+    <div class="row">           
+        <!-- right column -->
+        <div class="col-md-10 ">
+            <!-- Horizontal Form -->
+            <div class="box box-info ">
+                <!-- /.box-header -->
+                <!-- form start -->
+                You have successfully Updated record<form action="https://emails.bestonlineholidays.co.uk/admin/edit_travelzoo/13294" name="add_static_page" class="form-horizontal" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                <div class="box-body">                   
+                    
+                     <div class="form-group">
+			            <label class="col-sm-2 control-label">Media type</label>
+			            <div class="col-sm-10">
+			                <select class="form-control" name="media_id">
+			                    <option value>Any</option>
+			                    <option  value=1>Travelzoo</option><option  value=2>Dealchecker</option><option selected value=3>Emails</option><option  value=4>Kayak Deals</option><option  value=5>Icelolly</option><option  value=6>tscoop</option><option  value=7>metro</option><option  value=8>holidaypirates</option><option  value=9>web-ads</option><option  value=10>cheapflights</option><option  value=11>facebook</option><option  value=12>localhost</option><option  value=13>DailyMirror</option><option  value=14>es</option>					                    		                   
+			                </select>
+			                			          	</div>
+					  </div>
+                      <div class="form-group">
+						<label for="focusedinput" class="col-sm-2 control-label">Switch Chat</label>
+					<div class="col-sm-10">
+						<select class="form-control" name="pixls">
+                        <option value="yes"  selected="selected">ON</option>												
+                           <option value="no" >OFF</option>												
+						</select>
+										</div>	
+					</div>
+               
+                      <div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">emails_pos</label>
+                        <div class="col-sm-10">
+                            <select  class="form-control" name="emails_pos">
+                                  <option value>Select</option>
+                              <option value="1" >1</option>
+                              <option value="2" >2</option>
+                              <option  value="3" >3</option>
+                              <option  value="4" >4</option>
+                              
+                              <option value="5" >5</option>
+                              <option value="6" >6</option>
+                              <option  value="7" >7</option>
+                              <option  value="8" >8</option>
+                              
+                              <option  value="9" >9</option>
+                              <option  value="10" >10 </option>
+                            </select>
+                        </div>									
+                    </div>
+                    <div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">hotel_name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="hotel_name" placeholder="hotel_name" value="Xperience Kiroseiz Premier">
+                                                    </div>									
+                    </div>
+                       <div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">Hotel address</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="hotel_addr" placeholder="hotel_addr" value="Sharm El Sheikh, Egypt">
+                                                    </div>									
+                    </div>
+					<div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">url-strings</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="url_strings"  value="xperience_kiroseiz_premier/sharm_el_sheikh_egypt" required>
+                                                    </div>									
+                    </div>
+					 <div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">Price</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="price" placeholder="price" value="359">
+                                                    </div>									
+                    </div>
+					<div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">Top Heading</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="heading" placeholder="heading" value="ALL INCLUSIVE SHARM EL SHEIKH BEACH ESCAPE">
+                                                    </div>									
+                    </div>
+					<div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">Meta Title</label>
+                        <div class="col-sm-10">
+                            <textarea type="text" class="form-control" name="title" placeholder="Meta Title">ALL INCLUSIVE SHARM EL SHEIKH BEACH ESCAPE</textarea>
+                                                    </div>									
+                    </div>
+					 <div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">star rating</label>
+                         <div class="col-sm-10">	
+                           <select class="form-control" name="star">
+					                	<option value>Choose</option>
+					                	<option  value=1>1</option><option  value=2>2</option><option  value=3>3</option><option  value=4>4</option><option selected value=5>5</option><option  value=7>7</option>	              			                   
+					                </select>
+                                                    </div>									
+                    </div>
+					
+					<div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">Nights</label>
+                         <div class="col-sm-10">	
+                           <select class="form-control" name="nights">
+					                	<option value>Choose</option>
+					                	<option  value=1>1</option><option  value=2>2</option><option  value=3>3</option><option  value=4>4</option><option  value=5>5</option><option  value=6>6</option><option selected value=7>7</option><option  value=8>8</option><option  value=14>14</option><option  value=15>15</option>	              			                   
+					                </select>
+                                                    </div>									
+                    </div>
+                     <div class="form-group">
+			            <label class="col-sm-2 control-label">Board Basis</label>
+			            <div class="col-sm-9">
+			                <select class="form-control" name="board">
+			                    <option value>Any</option>
+			                    <option selected value=AI>All Inclusive</option><option  value=RO>Room Only</option><option  value=BB>Bed and Breakfast</option><option  value=SC>Self Catering</option><option  value=HB>Half Board</option><option  value=FB>Full Board</option>					                    		                   
+			                </select>
+			                			          	</div>
+					  </div>
+					  
+					   <div class="form-group">
+			            <label class="col-sm-2 control-label"> Resort Name</label>
+			            <div class="col-sm-9">
+			                <select class="form-control" name="resort">
+			                    <option value>Any</option>
+			                    <option  value=DUBAI>DUBAI</option><option  value=PHUKET>PHUKET</option><option  value=MALLORCA>MALLORCA</option><option  value=CYPRUS>CYPRUS</option><option  value=RHODES>RHODES</option><option  value=MADEIRA>MADEIRA</option><option  value=ALGARVE>ALGARVE</option><option  value=TURKEY>TURKEY</option><option  value=MAJORCA>MAJORCA</option><option  value=TENERIFE>TENERIFE</option><option  value=CORFU>CORFU</option><option  value=MARMARIS>MARMARIS</option><option  value=SANTORINI>SANTORINI</option><option  value=RHODES>RHODES</option><option  value=HALKIDIKI>HALKIDIKI</option><option  value=CROATIA>CROATIA</option><option  value=CRETE>CRETE</option><option  value=ZAKYNTHOS>ZAKYNTHOS</option><option  value=KOS>KOS</option><option  value=BARBADOS>BARBADOS</option><option  value=ZANTE>ZANTE</option><option  value=IBIZA>IBIZA</option><option  value=HURGHADA>HURGHADA</option><option  value=BODRUM>BODRUM</option><option  value=ICMELER>ICMELER</option><option  value=ZAKYNTHOS>ZAKYNTHOS</option><option  value=ANTALYA>ANTALYA</option><option  value=DALAMAN>DALAMAN</option><option  value=COSTA DEL SOL>COSTA DEL SOL</option><option  value=TALLINN>TALLINN</option><option  value=MALTA>MALTA</option><option  value=COSTA-DEL-SOL>COSTA-DEL-SOL</option><option  value=COSTADELSOL>COSTADELSOL</option><option  value= CANARIA> CANARIA</option><option  value=GRAN CANARIA>GRAN CANARIA</option><option  value=LANZAROTE>LANZAROTE</option><option  value=FUETEVENTURA>FUETEVENTURA</option><option  value=FUERTEVENTURA>FUERTEVENTURA</option><option  value=gran_canaria>gran_canaria</option><option  value=fuerteventura>fuerteventura</option><option  value=lanzarote>lanzarote</option><option  value=MARRAKECH>MARRAKECH</option><option  value=marrakech>marrakech</option><option  value= gran canaria> gran canaria</option><option  value=algarve>algarve</option><option  value=LANZAROTE GETAWAY>LANZAROTE GETAWAY</option><option  value=cyprus>cyprus</option><option  value=kos>kos</option><option  value=corfu>corfu</option><option  value=tenerife>tenerife</option><option  value= CRETE> CRETE</option><option  value=BENIDORM>BENIDORM</option><option  value=COSTA DEL SOL>COSTA DEL SOL</option><option  value=costa_del_sol>costa_del_sol</option><option  value=crete>crete</option><option  value=turkey>turkey</option><option  value=fuerteventura>fuerteventura</option><option  value=majorca>majorca</option><option  value=mallorca>mallorca</option><option  value=benidorm>benidorm</option><option  value=halkidiki>halkidiki</option><option  value=madeira>madeira</option><option  value=croatia>croatia</option><option  value=rhodes>rhodes</option><option  value=hurghada>hurghada</option><option  value= venice city> venice city</option><option  value=venice>venice</option><option  value=hurghada>hurghada</option><option  value=hurghada>hurghada</option><option  value=madeira>madeira</option><option  value=venice>venice</option><option  value=venice>venice</option><option  value=Krakow>Krakow</option><option  value=EGYPT>EGYPT</option><option  value=PRAGUE>PRAGUE</option><option  value=ICELAND>ICELAND</option><option  value=BENALMADENA>BENALMADENA</option><option  value=GRAN-CANARIA>GRAN-CANARIA</option><option  value=Marne-la-Vallee>Marne-la-Vallee</option><option  value=Berlin>Berlin</option><option  value=ROME>ROME</option><option  value=Disneyland Paris>Disneyland Paris</option><option  value=Disneyland-Paris>Disneyland-Paris</option><option  value=Jersey>Jersey</option><option  value=Argassi>Argassi</option><option  value=Greece>Greece</option><option  value=New-York-City>New-York-City</option><option  value=Sharm-El-Sheikh>Sharm-El-Sheikh</option><option  value=Budapest>Budapest</option><option  value=Balgaria>Balgaria</option><option  value=Portugal>Portugal</option><option  value=Bulgaria>Bulgaria</option><option  value=Menorca>Menorca</option><option  value=Lisbon>Lisbon</option><option  value=Vienna>Vienna</option><option  value=Psalidi_Greece>Psalidi_Greece</option><option  value=Cancun_Mexico>Cancun_Mexico</option><option  value=Kallithea_Greece>Kallithea_Greece</option><option  value=Malta>Malta</option><option  value=Paphos_Cyprus>Paphos_Cyprus</option><option  value=Antigua>Antigua</option><option  value=tenerife.>tenerife.</option><option  value=tenerife_spain>tenerife_spain</option><option  value=Costa_del_sol>Costa_del_sol</option><option  value=DISNEYLAND_PARIS>DISNEYLAND_PARIS</option><option  value=Manavgat_Turkey>Manavgat_Turkey</option><option  value=Gran_Canaria>Gran_Canaria</option><option selected value=Sharm_El_Sheikh>Sharm_El_Sheikh</option><option  value=St._Lucia>St._Lucia</option><option  value=Las_Vegas>Las_Vegas</option><option  value=Mestre_Italy>Mestre_Italy</option><option  value=New_York_City>New_York_City</option><option  value=Venice_Italy>Venice_Italy</option><option  value=NEW_YORK_w/Optional_Cruise>NEW_YORK_w/Optional_Cruise</option><option  value=Marne_la_Vallee>Marne_la_Vallee</option><option  value=Mauritius>Mauritius</option><option  value=NEW_YORK_w/including_Full_Island_Cruise>NEW_YORK_w/including_Full_Island_Cruise</option><option  value=malaga>malaga</option><option  value=Sardinia_Italy>Sardinia_Italy</option><option  value=VENICE w/ISLAND HOPPING TOUR>VENICE w/ISLAND HOPPING TOUR</option><option  value=VENICE_w/ISLAND_HOPPING_TOUR>VENICE_w/ISLAND_HOPPING_TOUR</option><option  value=Costa_Del_Sol>Costa_Del_Sol</option><option  value=Kandy_Sri_Lanka>Kandy_Sri_Lanka</option><option  value=Sri_Lanka>Sri_Lanka</option><option  value=DISNEYLAND_PARIS_Inc_Park_Tickets>DISNEYLAND_PARIS_Inc_Park_Tickets</option><option  value=Italy>Italy</option><option  value=LAKE_GARDA>LAKE_GARDA</option><option  value=BUDAPEST w/River Cruise>BUDAPEST w/River Cruise</option><option  value=BUDAPEST_w/River_Cruise>BUDAPEST_w/River_Cruise</option><option  value=Miami_Beach>Miami_Beach</option><option  value=PHUKET_w/OPTIONAL_KOH_PHI_PHI_TOUR>PHUKET_w/OPTIONAL_KOH_PHI_PHI_TOUR</option><option  value=SORRENTO_ITALY>SORRENTO_ITALY</option><option  value=POLAND>POLAND</option><option  value=Amsterdam>Amsterdam</option><option  value=NEW_YORK_w/FULL_ISLAND_CRUISE>NEW_YORK_w/FULL_ISLAND_CRUISE</option><option  value=KRAKOW_w/SCHINDLER'S_LIST_FACTORY_TOUR>KRAKOW_w/SCHINDLER'S_LIST_FACTORY_TOUR</option><option  value=	KRAKOW_w/SCHINDLERS_LIST_FACTORY_TOUR>	KRAKOW_w/SCHINDLERS_LIST_FACTORY_TOUR</option><option  value=SICILY>SICILY</option><option  value=PERUGIA>PERUGIA</option><option  value=Marina>Marina</option><option  value=SOUTHERN_ITALY_BEACH_Carovigno>SOUTHERN_ITALY_BEACH_Carovigno</option><option  value=MONTEGO>MONTEGO</option><option  value=Jamaica,_Montego_Bay>Jamaica,_Montego_Bay</option><option  value=Jamaica_Montego_Bay>Jamaica_Montego_Bay</option><option  value=porto>porto</option><option  value=BARCELONA>BARCELONA</option><option  value=miami>miami</option><option  value=LAKE>LAKE</option><option  value=SAN_FRANCISCO>SAN_FRANCISCO</option><option  value=SEVILLE>SEVILLE</option><option  value=KENYA>KENYA</option><option  value=COSTA BRAVA>COSTA BRAVA</option><option  value=COSTA_BRAVA>COSTA_BRAVA</option><option  value=BANKOK>BANKOK</option><option  value=THAILAND_BEACH>THAILAND_BEACH</option><option  value=SAINT>SAINT</option><option  value=GOA>GOA</option><option  value=NICE>NICE</option><option  value=Praslin_Island_Seychelles>Praslin_Island_Seychelles</option><option  value=Hong_Kong>Hong_Kong</option><option  value=Jimbaran_Indonesia>Jimbaran_Indonesia</option><option  value=Bali>Bali</option><option  value=NAPLES>NAPLES</option><option  value=MADRID>MADRID</option><option  value=RAS AL KHAIMAH>RAS AL KHAIMAH</option><option  value=Ras_Al_Khaimah>Ras_Al_Khaimah</option><option  value=SPLIT>SPLIT</option><option  value=Lisbon_-_Including_Tram_Tour >Lisbon_-_Including_Tram_Tour </option><option  value=Iceland_,_Inc_Northern_Lights_Tour>Iceland_,_Inc_Northern_Lights_Tour</option><option  value=Iceland,_Inc_Northern_Lights_Tour>Iceland,_Inc_Northern_Lights_Tour</option><option  value=Monte_Carlo>Monte_Carlo</option><option  value=Dominican_Republic>Dominican_Republic</option><option  value=Mombasa>Mombasa</option><option  value=Aruba>Aruba</option><option  value=Athens>Athens</option><option  value=Maldives>Maldives</option><option  value=TOBAGO>TOBAGO</option><option  value=COSTA_BRAVA>COSTA_BRAVA</option><option  value=Thailand_Twin_Center>Thailand_Twin_Center</option><option  value=FLORENCE>FLORENCE</option><option  value=PARIS>PARIS</option><option  value=MEXICO>MEXICO</option><option  value=LISBON>LISBON</option><option  value=PAPHOS>PAPHOS</option><option  value=BRUGES>BRUGES</option><option  value=ISTANBUL>ISTANBUL</option><option  value=PISA CITY>PISA CITY</option><option  value=MILAN>MILAN</option><option  value=Paris City>Paris City</option><option  value=DUBLIN>DUBLIN</option><option  value=thailand>thailand</option><option  value=HAMBURG>HAMBURG</option><option  value=BULGARIA>BULGARIA</option><option  value=Salou>Salou</option>					                    		                   
+			                </select>
+			                			          	</div>
+					  </div>
+                    
+                    
+					<div class="form-group">
+						<label for="focusedinput" class="col-sm-2 control-label">theme_id</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" name="theme_id" placeholder="theme_id" value="6">
+													</div>	
+					</div>
+					 <div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">phone_num</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="phone_num" placeholder="phone_num" value="020 3883 1740">
+                                                    </div>									
+                    </div> 
+                    
+                    <div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">save percent</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="save_percent" placeholder="save percent" value="41">
+                                                    </div>									
+                    </div>
+                   
+					<div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">Overview</label>
+                        <div class="col-sm-10">
+                            <textarea type="text"  id="editor1" class="form-control" name="description" placeholder="Overview"><p>Offering an outdoor pool and a restaurant, Xperience Kiroseiz Premier is located in Sharm El Sheikh. The property has direct acces to 2 beaches, one pure sandy beach and the other is coral beach for snorkeling and diving.</p>
+
+<p>&nbsp;</p>
+
+<p>The accommodation will provide you with air conditioning and a balcony. Private bathroom also comes with a bath or shower. You can enjoy pool view and garden view from the room. Extras include a seating area.</p>
+
+<p>Xperience Hilltop Beach and Xperience Golden Sand Beach are 20 minutes away by car.A free shuttle bus available to the beach. Other facilities offered at the property include entertainment staff, a nightclub and a shared lounge. An array of activities can be enjoyed on site or in the surroundings, including a water park.</p>
+
+<p>If you feel like visiting the surroundings, check out Ras Mohammed National Park (17.6 km). Sharm El Sheikh International Airport is a 10-minute drive from Xperience Kiroseiz Premier. Naama Bay is 4 minutes by car.</p>
+</textarea>
+                                                    </div>									
+                    </div>	
+					
+                    <div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">location</label>
+                        <div class="col-sm-10">
+                            <input type="url" class="form-control" name="location" placeholder="location" value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3525.3087820570986!2d34.337548975982635!3d27.923177615938165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1453378d65012de9%3A0xe1f5fe8fc879b707!2sXperience%20Kiroseiz%20Parkland!5e0!3m2!1sen!2sin!4v1682761835756!5m2!1sen!2sin">
+                                                    </div>									
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">Book Online</label>
+                        <div class="col-sm-10">
+                            <input type="url" class="form-control" name="online_booking_btn" placeholder="book online link" value="">
+                                                    </div>									
+                    </div>
+
+                     <div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">Deal Highlights</label>
+                        <div class="col-sm-10">
+                            <textarea type="text" class="form-control" name="highlights" placeholder=" Description">Return Flights,7 Nights,Board Basis – All Inclusive</textarea>
+                                                    </div>									
+                    </div>
+					<div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">Add Tour if any</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="tour" placeholder="Tour" value="">
+                                                    </div>									
+                    </div> 
+                   
+                    
+                    <div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">Selected Dates</label>
+                        <div class="col-sm-10">				   		
+                            <input type="text" class="form-control" name="selected_dates" placeholder="Selected Dates" value="Nov 2023 - May 2024">
+                                                    </div>									
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">Dates</label>
+                        <div class="col-sm-10">
+                            <textarea type="text"  id="editor" class="form-control" name="dates" placeholder="page content for dates"><div class="deal__dates">
+<div class="deal__year" id="deal__year_1">
+<div class="deal__months">
+<div class="deal__yearName">London Departures 7 Nights From &pound;359 pp</div>
+
+<div class="deal__month"><span>Jan 2024 &pound;359</span><span> 22nd, 27th, 29th</span></div>
+
+<div class="deal__month"><span>Feb 2024 &pound;359</span><span> 5th, 20th</span></div>
+
+<div class="deal__month"><span>Mar 2024 &pound;389</span><span> 4th, 11th</span></div>
+
+<div class="deal__month"><span>Dec 2023 &pound;419</span><span> 4th, 6th, 12th</span></div>
+
+<div class="deal__month"><span>Nov 2023 &pound;429</span><span> 15th, 28th, 30th</span></div>
+
+<div class="deal__month"><span>Apr 2024 &pound;829</span><span> 18th, 20th</span></div>
+</div>
+</div>
+
+<div class="deal__year" id="deal__year_2">
+<div class="deal__months">
+<div class="deal__yearName">From London Luton &amp; London Gatwick</div>
+</div>
+</div>
+
+<div class="deal__year" id="deal__year_3">
+<div class="deal__months">
+<div class="deal__yearName">Manchester Departures 7 Nights From &pound;419 pp</div>
+
+<div class="deal__month"><span>Jan 2024 &pound;419</span><span> 9th, 11th, 18th, 25th</span></div>
+
+<div class="deal__month"><span>Dec 2023 &pound;449</span><span> 7th, 13th</span></div>
+
+<div class="deal__month"><span>Feb 2024 &pound;449</span><span> 27th, 29th</span></div>
+
+<div class="deal__month"><span>Mar 2024 &pound;479</span><span> 7th, 13th</span></div>
+
+<div class="deal__month"><span>Nov 2023 &pound;499</span><span> 28th, 30th</span></div>
+
+<div class="deal__month"><span>Apr 2024 &pound;829</span><span> 18th, 20th</span></div>
+</div>
+</div>
+
+<div class="deal__year" id="deal__year_4">
+<div class="deal__months">
+<div class="deal__yearName">Bristol Departures 7 Nights From &pound;399 pp</div>
+
+<div class="deal__month"><span>Jan 2024 &pound;399</span><span> 17th, 31st</span></div>
+
+<div class="deal__month"><span>Feb 2024 &pound;429</span><span> 21st, 28th</span></div>
+
+<div class="deal__month"><span>Dec 2023 &pound;449</span><span> 2nd, 13th</span></div>
+
+<div class="deal__month"><span>Nov 2023 &pound;489</span><span> 11th, 22nd, 25th, 29th</span></div>
+
+<div class="deal__month"><span>Mar 2024 &pound;499</span><span> 2nd, 6th</span></div>
+
+<div class="deal__month"><span>Apr 2024 &pound;849</span><span> 17th</span></div>
+</div>
+</div>
+
+<div class="deal__year" id="deal__year_5">
+<div class="deal__months">
+<div class="deal__yearName">Birmingham Departures 7 Nights From &pound;649 pp</div>
+
+<div class="deal__month"><span>Nov 2023 &pound;649</span><span> 23rd, 26th, 30th</span></div>
+
+<div class="deal__month"><span>Dec 2023 &pound;649</span><span> 3rd, 6th, 10th, 13th</span></div>
+
+<div class="deal__month"><span>Feb 2024 &pound;699</span><span> 1st, 7th</span></div>
+
+<div class="deal__month"><span>Jan 2024 &pound;729</span><span> 11th, 14th, 17th, 21st, 24th</span></div>
+
+<div class="deal__month"><span>Mar 2024 &pound;739</span><span> 6th, 13th</span></div>
+
+<div class="deal__month"><span>Apr 2024 &pound;839</span><span> 18th, 21st</span></div>
+</div>
+</div>
+</div>
+</textarea>
+                                                    </div>									
+                    </div>		
+                    <div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">Email Send Date</label>
+                        <div class="col-sm-10">
+                            <input type="date" class="form-control" name="senddate" placeholder="senddate" value="2023-04-29">
+                                                    </div>									
+                    </div> 
+
+                     <div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">Deal of week link</label>
+                        <div class="col-sm-10">				   		
+                            <input type="url" class="form-control" name="deal_week" placeholder="deal_week" value="">
+                                                    </div>									
+                    </div>
+                    
+                     <div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">Deal of week Image link</label>
+                        <div class="col-sm-10">				   		
+                            <input type="url" class="form-control" name="deal_week_img" placeholder="deal_week_img" value="">
+                                                    </div>									
+                    </div>
+				
+					 <div class="form-group">
+			            <label class="col-sm-2 control-label">AS SEEN ON (Only for emails)</label>
+			            <div class="col-sm-10">
+			                <select class="form-control" name="as_seen_on">
+			                    <option value>Any</option>
+			                    <option  value=1>Travelzoo</option><option  value=2>Dealchecker</option><option  value=3>Emails</option><option  value=4>Kayak Deals</option><option  value=5>Icelolly</option><option  value=6>tscoop</option><option  value=7>metro</option><option  value=8>holidaypirates</option><option  value=9>web-ads</option><option  value=10>cheapflights</option><option  value=11>facebook</option><option  value=12>localhost</option><option  value=13>DailyMirror</option><option  value=14>es</option>					                    		                   
+			                </select>
+			                			          	</div>
+					  </div>
+                    
+					
+					<div class="form-group hide">
+                        <label for="focusedinput" class="col-sm-2 control-label">Select Images folder of Hotel</label>
+                        <div class="col-sm-10">
+						<select class="form-control" name="img_folder">
+						    <option value>Select Hotel Images</option>
+							<option  value=PureWhite>PureWhite</option><option  value=Apartmentsk>Apartmentsk</option><option  value=BayTortuga>BayTortuga</option><option  value=BayTortuga>BayTortuga</option><option  value=coverotanaresort>coverotanaresort</option><option  value=ALGARVE>ALGARVE</option><option  value=RHODES>RHODES</option><option  value=CORFU>CORFU</option><option  value=MARMARIS>MARMARIS</option><option  value=CROATIA>CROATIA</option><option  value=SANTORINI>SANTORINI</option><option  value=ZANTE>ZANTE</option><option  value=KOS>KOS</option><option  value=MADEIRA>MADEIRA</option><option  value=CYPRUS>CYPRUS</option><option  value=BARBADOS>BARBADOS</option><option  value=BODRUM>BODRUM</option><option  value=IBIZA>IBIZA</option><option  value=CRETE>CRETE</option><option  value=HALKIDIKI>HALKIDIKI</option><option  value=MAJORCA>MAJORCA</option><option  value=TURKEY>TURKEY</option><option  value=ANTALYA>ANTALYA</option><option  value=DALAMAN>DALAMAN</option><option  value=TENERIFE>TENERIFE</option><option  value=TALLINN>TALLINN</option><option  value=COST-DEL-SOL>COST-DEL-SOL</option><option  value=COSTADELSOL>COSTADELSOL</option><option  value=gran_canaria>gran_canaria</option><option  value=fuerteventura>fuerteventura</option><option  value=lanzarote>lanzarote</option><option  value=marrakech>marrakech</option><option  value=algarve.jpg>algarve.jpg</option><option  value=algarve>algarve</option><option  value=cyprus>cyprus</option><option  value=kos>kos</option><option  value=kos>kos</option><option  value=corfu>corfu</option><option  value=tenerife>tenerife</option><option  value=costa_del_sol>costa_del_sol</option><option  value=crete>crete</option><option  value=turkey>turkey</option><option  value=mallorca>mallorca</option><option  value=benidorm>benidorm</option><option  value=madeira>madeira</option><option  value=corfu>corfu</option><option  value=halkidiki>halkidiki</option><option  value=lanzarote_exclusive_2020_11_2.jpg>lanzarote_exclusive_2020_11_2.jpg</option><option  value=tenerife>tenerife</option><option  value=croatia>croatia</option><option  value=majorca>majorca</option><option  value=rhodes>rhodes</option><option  value=venice>venice</option><option  value=hurghada>hurghada</option>                  
+				        </select>
+						
+                        </div>									
+                    </div>
+					 <div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">First image link</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="firstimg_link" placeholder="first img link" value="">
+                                                    </div>									
+                    </div>
+					 <div class="form-group">
+                        <label for="focusedinput" class="col-sm-2 control-label">List Page image link</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="listpageimg_link" placeholder="list page img link" value="">
+                                                    </div>									
+                    </div>
+					<div class="form-group">
+						   <label class="col-sm-3 control-label">Upload ALL Images to replace:</label>
+						   <div class="col-sm-4">
+								<input type="file" multiple class="form-control" name="uploadedimages[]" accept="image/x-png, image/gif, image/jpeg" />
+							        						<img src="https://emails.bestonlineholidays.co.uk/sliders/1682762918Sharm_El_Sheikh.jpg" width="50" height="50">
+        						<a href="https://emails.bestonlineholidays.co.uk/admin/remove_tzimg/13294/sliders/1682762918Sharm_El_Sheikh.jpg" Onclick="return confirm('Are you sure?');" ><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+        					        						<img src="https://emails.bestonlineholidays.co.uk/sliders/0_16827623960_1.jpg" width="50" height="50">
+        						<a href="https://emails.bestonlineholidays.co.uk/admin/remove_tzimg/13294/sliders/0_16827623960_1.jpg" Onclick="return confirm('Are you sure?');" ><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+        					        						<img src="https://emails.bestonlineholidays.co.uk/sliders/1_16827623960_2.jpg" width="50" height="50">
+        						<a href="https://emails.bestonlineholidays.co.uk/admin/remove_tzimg/13294/sliders/1_16827623960_2.jpg" Onclick="return confirm('Are you sure?');" ><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+        					        						<img src="https://emails.bestonlineholidays.co.uk/sliders/2_16827623960_3.jpg" width="50" height="50">
+        						<a href="https://emails.bestonlineholidays.co.uk/admin/remove_tzimg/13294/sliders/2_16827623960_3.jpg" Onclick="return confirm('Are you sure?');" ><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+        					        						<img src="https://emails.bestonlineholidays.co.uk/sliders/3_16827623960_4.jpg" width="50" height="50">
+        						<a href="https://emails.bestonlineholidays.co.uk/admin/remove_tzimg/13294/sliders/3_16827623960_4.jpg" Onclick="return confirm('Are you sure?');" ><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+        					        						<img src="https://emails.bestonlineholidays.co.uk/sliders/4_16827623960_5.jpg" width="50" height="50">
+        						<a href="https://emails.bestonlineholidays.co.uk/admin/remove_tzimg/13294/sliders/4_16827623960_5.jpg" Onclick="return confirm('Are you sure?');" ><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+        					        						<img src="https://emails.bestonlineholidays.co.uk/sliders/5_16827623960_6.jpg" width="50" height="50">
+        						<a href="https://emails.bestonlineholidays.co.uk/admin/remove_tzimg/13294/sliders/5_16827623960_6.jpg" Onclick="return confirm('Are you sure?');" ><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+        						
+							</div>	
+						
+					</div>	
+					<div class="form-group">
+						   <label class="col-sm-3 control-label">Upload ONE Image Only to ADD Gallery :</label>
+						   <div class="col-sm-4">
+								<input type="file" multiple class="form-control" name="uploadednewimage" accept="image/x-png, image/gif, image/jpeg" />
+							
+							</div>	
+						
+					</div>	
+					<center>
+                    <a href="https://emails.bestonlineholidays.co.uk/admin/download_tzimgs/13294" class="btn btn-success"><i class="fa fa-download" aria-hidden="true"></i> Download All Images </a>
+                    </center>
+	
+				<h3>ADD monthly offers:</h3>
+				    <div class="form-group">
+                     
+						<div class="after-add-more">
+														<div class="col-sm-2">
+					
+							 <select name="monthc[]"  class="form-control">
+							 <option value>Select Month</option>
+								<option value="January">January</option>
+								<option value="February">February</option>
+								<option value="March">March</option>
+								<option value="April">April</option>
+								<option value="May">May</option>
+								<option value="June">June</option>
+								<option value="July">July</option>
+								<option value="August">August</option>
+								<option value="September">September</option>
+								<option value="October">October</option>
+								<option value="November">November</option>
+								<option value="December">December</option>
+							 </select> 
+
+								
+							</div>
+							<div class="col-sm-2">
+
+							 <select name="nightc[]"  class="form-control">
+							 	 <option value>Nights</option>
+								
+								<option value="3">3</option>
+								<option value="5">5</option>
+								<option value="7">7</option>
+								<option value="14">14</option>
+							 </select> 
+
+								
+							</div>
+							<div class="col-sm-2">
+							 <input type="text" name="pricec[]"  class="form-control" placeholder="Enter Price">
+							</div>
+						 <div class="col-sm-2"> 
+                                    <button class="btn btn-success add-more" type="button"><i class="fa fa-plus fa-fw"></i> Add More</button>
+                          </div>
+					
+						 <div class="clearfix"></div>
+												  </div>
+                    </div>
+			
+                </div><!-- /.box-body -->						 		
+                <div class="box-footer">
+                    <a class="btn btn-default" href="https://emails.bestonlineholidays.co.uk/admin/travelzoo">Cancel</a>
+                    <button class="btn btn-info pull-right" type="submit" >UPADTE</button>
+                </div>    					
+                </form>	
+            </div><!-- /.box -->             
+        </div><!--/.col (right) -->
+    </div>   <!-- /.row -->
+</section><!-- /.content -->
+
+<!-- Copy Fields-These are the fields which we get through jquery and then add after the above input,-->
+<div class="copy-fields hide">
+<div class="control-group">
+
+	<div class="col-sm-2">
+
+     <select name="monthc[]" required  class="form-control">
+		<option value>Select Month</option>
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+     </select> 
+
+		
+	</div>
+	<div class="col-sm-2">
+
+     <select name="nightc[]" required  class="form-control">
+		<option value>Nights</option>
+       
+        <option value="3">3</option>
+        <option value="5">5</option>
+        <option value="7">7</option>
+        <option value="14">14</option>
+     </select> 
+
+	</div>
+	<div class="col-sm-2">
+	 <input type="text" name="pricec[]"  class="form-control"  placeholder="Enter Price">
+	</div>
+	 <div class="col-sm-2"> 
+            <button class="btn btn-danger remove" type="button"><i class="fa fa-remove fa-fw"></i> Remove</button>
+      </div>
+	</div>
+	 <div class="clearfix"></div>
+</div>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+        //CKEDITOR
+        //initSample();
+        CKEDITOR.replace('editor', {
+            filebrowserBrowseUrl: '/admin/system_settings/browse',
+            filebrowserUploadUrl: '/admin/system_settings/upload'
+        });
+        CKEDITOR.replace('editor1', {
+            filebrowserBrowseUrl: '/admin/system_settings/browse',
+            filebrowserUploadUrl: '/admin/system_settings/upload'
+        });
+		CKEDITOR.replace('editor2', {
+            filebrowserBrowseUrl: '/admin/system_settings/browse',
+            filebrowserUploadUrl: '/admin/system_settings/upload'
+        });
+
+    });
+	$(document).ready(function() {
+//here first get the contents of the div with name class copy-fields and add it to after "after-add-more" div class.
+      $(".add-more").click(function(){ 
+          var html = $(".copy-fields").html();
+          $(".after-add-more").after(html);
+      });
+	//here it will remove the current value of the remove button which has been pressed
+      $("body").on("click",".remove",function(){ 
+          $(this).parents(".control-group").remove();
+      });
+	  
+	   });
+</script>
+
+
+<style>
+.box-body i.fa.fa-times-circle {
+    position: relative;
+    top: -15px;
+    background: #fff;
+    padding: 5px;
+    color: red;
+}
+.box-body img {
+    vertical-align: middle;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: -15px;
+}
+.control-group {
+    margin-top: 5px;
+}
+</style>                <!-- /.content --> 
+            </div>
+            <!-- /.content-wrapper --> 
+
+            <!-- Main Footer -->
+            <footer class="main-footer"> 
+                <!-- To the right --> 
+
+                <!-- Default to the left --> 
+                <strong>Copyright &copy; 2015 <a href="#">bookitnow</a>.</strong> All rights reserved. </footer>
+
+        </div>			  
+        <script type="text/javascript" src="https://emails.bestonlineholidays.co.uk/assets/js/jquery.min.js"></script><script type="text/javascript" src="https://emails.bestonlineholidays.co.uk/assets/js/bootstrap.min.js"></script><script type="text/javascript" src="https://emails.bestonlineholidays.co.uk/assets/js/admin1/app.min.js"></script><script type="text/javascript" src="https://emails.bestonlineholidays.co.uk/assets/js/admin/ckeditor/ckeditor.js"></script><script type="text/javascript" src="https://emails.bestonlineholidays.co.uk/assets/js/admin/ckeditor/sample.js"></script> 
+        <script type="text/javascript">
+            function isNumber(event) {
+                var charCode = (event.which) ? event.which : event.keyCode;
+                if (charCode > 31 && (charCode < 48 || charCode > 57))
+                    return false;
+                return true;
+            }
+            $(function () {
+                if ($(".table").length)
+                    $(".table").not("#example").DataTable({
+                        "scrollX": true,
+                    });
+            });
+
+            function blockCustomTabs(e) {
+                $.blockUI.defaults.css = {};
+                $(e).block({
+                    message: '<div><img src="/images/loader-bar.gif" alt=""  width="225px"/></div>',
+                    overlayCSS: {backgroundColor: '#fff'}
+                });
+            }
+            function unblockCustomTabs(e) {
+                $(e).unblock();
+            }
+
+
+
+        </script>
+        <script type="text/javascript">
+            $(function () {
+        $('.js-example-basic-single').select2();                  })
+
+        </script>
+    </body>
+</html>
+
+
+

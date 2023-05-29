@@ -1,0 +1,26 @@
+Please follow the Steps below while creating any Enterprise Application with PHP (MySql Procedural)
+
+::DATABASE CONNECTIVITY::
+
+1. Write down the error blocking code as:
+    error_reporting( E_ERROR | E_WARNING | E_PARSE);
+
+2. Create the connection to the Mysql server as : 
+    $servername = "localhost";
+    $username = "username";
+    $password = "password";
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password);
+    
+    // Check connection
+    if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+    }
+
+3. Write a query to Create Database, & Execute it to generate Database in PhpMyAdmin as:
+    $db="grocerydb";
+	$db_create = "CREATE DATABASE IF NOT EXISTS $db";
+	$db_create_query = mysqli_query($con,$db_create);
+
+    

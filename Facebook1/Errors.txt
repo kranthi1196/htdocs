@@ -1,0 +1,7 @@
+mysqli_report(MYSQLI_REPORT_OFF);
+$connect = @mysqli_connect("localhost","root","","faceback1");
+
+
+mysqli_query(
+
+mysqli_query($connect, 

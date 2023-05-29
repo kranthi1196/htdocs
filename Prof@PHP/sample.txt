@@ -1,0 +1,122 @@
+<?php
+$file= "file.csv";
+$name = $_POST['name'];
+$email = $_POST['email'];
+$address = $_POST['address'];
+$phone = $_POST['phone'];
+$qualification = $_POST['qualification'];
+$sector = $_POST['sector'];
+$interest = $_POST['interest'];
+$image= $_POST['image'];
+<input type="hidden" name="MAX_FILE_SIZE" value="500">
+<P>
+<br>
+<input type="file" name="image" value="upload" >
+
+PRINT THIS CODE ON USERPAGE
+
+<?php print"<img src=\"$image\" width=\"100px\" height=\"100px\"\/>";?> 
+
+
+
+
+
+    <!--print "<center> <img class=\".emblem\" src=\"./Images/TSPSC_Logo.png\" alt=\"Telangana State Logo\" width=\"100px\" height=\"100px\" padding-top=\"10px\"></center>";-->
+   
+   <center><h1>TELANGANA STATE PUBLIC SERVICE COMMISSION :: HYDERABAD</h1>
+            <h2>GROUP-II SERVICES</h2>
+            <h2>(GENERAL RECRUITMENT)</h2>
+            <h2>SUPPLEMENTARY NOTIFICATION NO. 17/2016 TO NOTIFICATION NO. 20/2015, Dated.01/09/2016</h2></center>";
+    
+            <table border="1px">
+                <tr>
+                    <td class="slnum">1. </td><td colspan="3">Unique Identification Number (UID)/Aadhaar Number : $uid</td><td rowspan="5" style="width: 150px;"><img src="" alt="Candidate Photo"></td></tr>
+                    <tr><td class="slnum">2. </td><td class="tdwidth">TSPSC ID : </td><td class="slnum">3.</td><td class="tdwidth">Reference Id :</td></tr>
+                    <tr><td class="slnum">4. </td><td>Candidate Name :</td><td class="slnum">5.</td><td class="tdwidth">Father's/Husband`s Name :</td></tr>
+                    <tr><td class="slnum">6. </td><td colspan="3">Mother's Name :</td></tr>
+                    <tr><td class="slnum">7. </td><td>Date of Birth :</td><td class="slnum">8.</td><td>Gender :</td></tr>
+                    <tr><td class="slnum">9. </td><td colspan="3">Address for communication :</td> <td><img src="" alt="Candidate Signature"></td></tr>
+                    <tr><td class="slnum">10.</td><td colspan="3">District/Mandal/Village :</td><td rowspan="7"></td></tr>
+                    <tr><td class="slnum">11.</td><td colspan="3">Pincode : Mobile :  E-mail :</td></tr>
+                    <tr><td class="slnum">12.</td><td>Community : </td></tr>
+                    <tr><td class="slnum">13.</td><td colspan="3">Identification Marks as per SSC certificate :</td></tr>
+                    <tr><td class="slnum">14.</td><td colspan="3">Are you an Ex-Service man : , Govt Employment Status : </td></tr>
+                    <tr><td class="slnum">15.</td><td colspan="3">Are you retrenched temporary employee in State Census department : </td></tr>
+                    <tr><td class="slnum">16. </td><td>Worked as instructor in NCC : </td><td class="slnum">17.</td><td>Are you a PH-Person : No</td></tr>
+                    <tr><td class="slnum">18. </td><td colspan="4">Do You Possess Qualification and Eligibility for Post Codes 01, 04, 06, 07, 09 as per Notification? : </td></tr>
+                    <tr><td class="slnum">19. </td><td colspan="4">Do You Possess Qualification and Eligibility for Post Code 02 as per Notification : </td></tr>
+                    <tr><td class="slnum">20. </td><td colspan="4">Do You Possess Qualification and Eligibility for Post Code 03 as per Notification : </td></tr>
+                    <tr><td class="slnum">21. </td><td colspan="4">Do You Possess Qualification, Eligibility and Physical Requirements For Pc. No. 05 as per Notification : </td></tr>
+                    <tr><td class="slnum">22. </td><td colspan="4">Do You Profess Hindu Religion :</td></tr>
+                    <tr><td class="slnum">23. </td><td colspan="4">Do You Possess Qualification and Eligibility for Post Code 10 as per Notification : </td></tr>
+                    <tr><td class="slnum">24. </td><td colspan="4">Do You Possess Qualification and Eligibility for Post Code 11 as per Notification : </td></tr>
+                    <tr><td class="slnum">25. </td><td colspan="4">Do You Possess Qualification and Eligibility for Post Code 12 as per Notification : </td></tr>
+                    <tr><td class="slnum">26. </td><td colspan="4">Do You Possess Qualification and Eligibility for Post Code 13 as per Notification : </td></tr>
+                    <tr><td class="slnum">27. </td><td colspan="4">Applied Posts : </td></tr>
+                    <tr><td class="slnum">27a. </td><td colspan="4">Qualification : A Bachelor's Degree from any recognized University in India established or incorporated by or under Central Act,
+                        Provincial Act, a State Act or an Institution recognized by the U.G.C. </td></tr>
+                    <tr><td class="slnum">27b. </td><td colspan="4">University :</td></tr>
+                    <tr><td class="slnum">28. </td><td style="width: 440px;">Date of Acquiring Qualification :</td><td class="slnum">29.</td><td colspan="2">Type of Study :</td></tr>
+                    <tr><td class="slnum">30. </td><td colspan="4">Zone as Indicated by the Candidate in OTR :</td></tr>
+                    
+                    
+                    
+                   </table>
+                   <table border="1px">
+                    <tr><td colspan="9"><center>31. Education Details  </center></td></tr>
+                    <tr><td style="width:123px; text-align: center;">6th/Residence 1st yr</td><td style="width:123px ;text-align: center;">7th/Residence 2nd yr</td><td style="width:123px ;text-align: center;">8th/Residence 3rd yr</td><td style="width:123px ;text-align: center;">9th/Residence 4th yr</td><td style="width:123px ;text-align: center;">SSC</td><td style="width:123px ;text-align: center;">Intermediate</td><td style="width:123px ;text-align: center;">Degree</td></tr>
+                    <tr><td style="width:123px ;text-align: center;">-</td><td style="width:123px ;text-align: center;">-</td><td style="width:123px ;text-align: center;">-</td><td style="width:123px ;text-align: center;">-</td><td style="width:123px ;text-align: center;">-</td><td style="width:123px ;text-align: center;">-</td><td style="width:123px ;text-align: center;">-</td></tr>
+                </table> 
+            </table>
+            <table border="1px">
+             <tr><td colspan="9"><center>32. Payment Details  </center></td></tr>
+             <tr><td style="width:300px; text-align: center;">Journal Number</td><td style="width:300px ;text-align: center;">Payment Date</td><td style="width:300px ;text-align: center;">Amount</td></tr>
+             <tr><td style="width:300px ;text-align: center;">-</td><td style="width:300px ;text-align: center;">-</td><td style="width:300px ;text-align: center;">-</td></tr>
+         </table> 
+         <table border="1px">
+            <tr><td colspan="10"><center>33. Examination Centers  </center></td></tr>
+            <tr><td style="width: 85px; text-align: center;">Preference 1</td><td style="width: 85px;text-align: center;">Preference 2</td><td style="width: 85px;text-align: center;">Preference 3</td><td style="width: 85px; text-align: center;">Preference 4</td><td style="width: 85px;text-align: center;">Preference 5</td><td style="width: 85px;text-align: center;">Preference 6</td><td style="width: 85px; text-align: center;">Preference 7</td><td style="width: 85px;text-align: center;">Preference 8</td><td style="width: 85px;text-align: center;">Preference 9</td><td style="text-align: center;">Preference 10</td></tr>
+            <tr><td style="width: 85px;text-align: center;">-</td><td style="width: 85px;text-align: center;">-</td><td style="width: 85px;text-align: center;">-</td><td style="width: 85px;text-align: center;">-</td><td style="width: 85px;text-align: center;">-</td><td style="width: 85px;text-align: center;">-</td><td style="width: 85px;text-align: center;">-</td><td style="width: 85px;text-align: center;">-</td><td style="width: 85px;text-align: center;">-</td><td style="width: 85px;text-align: center;">-</td></tr>
+        </table> 
+        <center><h4>The details as available in OTR database as on <b> 27/07/2016 02:14:53 PM </b> Date& Time are used in this application form.</h4></center>
+
+                    <!--<tr><td>4th/Residence 1st yr</td><td style="width: 120px;">5th/Residence 2nd yr</td><td style="width: 120px;">6th/Residence 3rd yr</td><td style="width: 120px;">7th/Residence 4th yr</td><td style="width: 120px;">8th/Residence 5th yr</td><td>9th/Residence 6th yr</td><td>SSC/Degree</td></tr>
+                    <tr><td></td><td></td><td></td><td></td></tr>-->
+                    <table >
+                        <tr><td ><center> Declaration </center></td></tr>
+                        <tr><td style="width:auto;padding: 10px;"><h5> I here by declare that all the entries/statements made in this application are true, complete and correct to the best of my knowledge and belief. In the event of any information being found false or incorrect or ineligibility being detected before or after the examination, the Commission can take action against me as per rule incase it is detected that I have misled Telangana State Public Service Commission on any issue then I will be solely responsible for all penal consequences thereof.</h5></td></tr>
+                        <tr><td align="right" style="padding-right: 20px;">Sd/-</td></tr>
+                        <tr><td align="right" style="padding-right: 20px;">---()</td></tr>
+                    </table>
+                    <center><h6>Copyright ©2022. Telangana State Public Service Commission. All rights reserved.
+                    </h6></center>
+
+
+
+
+php table creation using Query in mysql
+
+
+/* Creating a table using Sql Query 
+$mysqli = new mysqli("localhost", "root", "", "practice");
+
+if($mysqli->connect_errno){
+    print"Connection Failed: %s<br/>".$mysqli->connect_error;
+    exit();
+}
+print"Connection Successful.<br/>";
+
+$sql = "CREATE TABLE test_app("." id INT NOT NULL AUTO_INCREMENT, "."uid BIGINT NOT NULL,"." cand_name VARCHAR(255) NOT NULL,"."fath_hus_name VARCHAR(255) NOT NULL,"."mother_name VARCHAR(255) NOT NULL,"."dob date NOT NULL,"."gender ENUM ('Male', 'Female') NOT NULL,"."address VARCHAR(255) NOT NULL,"."pincode INT NOT NULL,"."mobile INT NOT NULL,"."email VARCHAR(255) NOT NULL,"."PRIMARY KEY (id))";
+
+
+if($mysqli->query($sql)){
+    print"Table test_app is Created Successfully.<br>";
+    //printf"("Table test_app is Created Successfully.<br>")";
+}
+if($mysqli->errno){
+    print"Could not create a Table:".$mysqli->error;
+    //printf"("Could not create a Table: %s<br/>", $mysqli->error)";
+}
+$mysqli->close();
+
+Creating Table using Sql Query has ended */

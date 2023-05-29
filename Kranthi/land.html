@@ -1,0 +1,848 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bestonlineholidays</title>
+  <meta charset="utf-8">
+  <link rel="SHORTCUT ICON" href="https://travelzoo.bestonlineholidays.co.uk/assets/images/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js" type="e3e9181763f3b4774b1f4a66-text/javascript"></script>
+   <link href="https://travelzoo.bestonlineholidays.co.uk/assets/css/admin1/dataTables.bootstrap.css" type="text/css" rel="stylesheet">
+   <script type="e3e9181763f3b4774b1f4a66-text/javascript" src="https://travelzoo.bestonlineholidays.co.uk/assets/js/admin1/jquery.dataTables.min.js"></script>
+   <script type="e3e9181763f3b4774b1f4a66-text/javascript" src="https://travelzoo.bestonlineholidays.co.uk/assets/js/admin1/dataTables.bootstrap.min.js"></script>
+    <!-- <link href="<.?php // echo base_url(); ?>assets/css/dow-banners.css?<.?= time();?>" rel="stylesheet" type="text/css" />
+   <script type="text/javascript" src="<.?php //echo base_url(); ?>assets/js/scroll-reveal.js"></script>-->
+   
+  
+    <link href="https://travelzoo.bestonlineholidays.co.uk/assets/css/head-foot.css" type="text/css" rel="stylesheet">
+    <link href="https://travelzoo.bestonlineholidays.co.uk/assets/css/main.css?1655287222" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://travelzoo.bestonlineholidays.co.uk/assets/css/a1travel.sb1.v1.css?v=2.30">
+   <link rel="stylesheet" href="https://travelzoo.bestonlineholidays.co.uk/assets/css/footer.css?1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://travelzoo.bestonlineholidays.co.uk/assets/css/simplelightbox.min.css" type="text/css">
+  <link rel="stylesheet" href="https://travelzoo.bestonlineholidays.co.uk/assets/css/light_image.css" type="text/css">
+  <link rel="stylesheet" href="https://travelzoo.bestonlineholidays.co.uk/assets/css/lt2-1.css?1655287222" type="text/css">
+  <link rel="stylesheet" href="https://travelzoo.bestonlineholidays.co.uk/assets/css/fonts.css" type="text/css">
+  <link rel="stylesheet" href="https://travelzoo.bestonlineholidays.co.uk/assets/css/responsive.css?1655287222" type="text/css">
+  <link rel="stylesheet" href="https://travelzoo.bestonlineholidays.co.uk/assets/css/bannerstyle.css?1655287222" type="text/css">
+
+
+    <link href="https://travelzoo.bestonlineholidays.co.uk/assets/css/travelzoo_list.css?1655287222" type="text/css" rel="stylesheet">
+	
+
+    
+<script type="e3e9181763f3b4774b1f4a66-text/javascript">(function(e){var t=document,n=t.createElement("script");n.async=!0,n.defer=!0,n.src=e,t.getElementsByTagName("head")[0].appendChild(n)})("//c.flx1.com/179-21074.js?id=21074&m=179")</script>
+<style>
+    .modal-dialog {
+			width: 497px;
+			margin: 30px auto;
+		}
+		
+		.header-icons .modal-content {
+			border-radius: 0;
+		}
+		
+		#myModal .modal-header .close {
+            margin-top: -32px;
+            background: #27376d;
+            opacity: 1;
+            width: 30px;
+            border-radius: 50px;
+            height: 30px;
+            color: #fff;
+            font-weight: normal;
+            top: 4px;
+            left: 25px;
+            font-weight: bold;
+            position: relative;
+        }
+		#myModal .modal-header {
+            border: 0;
+        }
+        #myModal .modal-content {
+            border-radius: 0;
+        }
+		#myModal2 .modal-header .close {
+		    position: relative;
+		    z-index: 99;
+			margin-top: -32px;
+			background: #27376d;
+			opacity: 1;
+			width: 30px;
+			border-radius: 50px;
+			height: 30px;
+			color: #fff;
+			font-weight: normal;
+			top: 20px;
+			left: 10px;
+			font-weight: bold;
+		}
+		
+		.header-icons .modal {
+			text-align: center;
+			padding: 0!important;
+		}
+		
+		.header-icons .modal:before {
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+			margin-right: -4px;
+		}
+		
+		.header-icons .modal-dialog {
+			display: inline-block;
+			text-align: left;
+			vertical-align: middle;
+		}
+		
+		#cookies h3 {
+			font-weight: 600;
+			text-align: center;
+		}
+		
+		#cookies .modal-content {
+			border-radius: 0;
+		}
+		
+		#cookies {
+			text-align: center;
+			padding: 15px;
+		}
+		
+		#cookies p {
+			font-size: 13.75px;
+		}
+		
+	#cookies button.close {
+    background: #27376d;
+    color: #FFF;
+    position: relative;
+    top: -13px;
+    left: 10px;
+    opacity: 1;
+    border-radius: 35px;
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+    z-index: 99;
+}
+
+.search_fil.desktop {
+    position: relative;
+    z-index: 1;
+    height: 508px;
+}
+
+footer#footer {
+    position: absolute;
+    top: 0;
+	left:0;
+	right:0;
+}
+@media only screen and (max-width: 991px) {
+.search_fil.desktop {
+    height: 578px;
+}
+}
+@media only screen and (max-width: 767px) {
+.body_box {
+    top: 0;
+}
+.metrologo {
+    width: 70PX;
+    padding-top: 10px;
+}
+}
+</style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-206616023-1" type="e3e9181763f3b4774b1f4a66-text/javascript">
+</script>
+<script type="e3e9181763f3b4774b1f4a66-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-206616023-1');
+</script>
+</head>
+<body>
+  
+	
+<header class="white">
+		
+      02038831740    <div id="dvHeader" class="inner gridContainer flex">
+
+        <a href="https://www.bestonlineholidays.co.uk/" class="content-logo">
+           <!-- Amends: Se-Designer: -->
+             <img src="https://travelzoo.bestonlineholidays.co.uk/images/bestonline-logo.svg" alt="bestonlineholidays.co.uk"></a>
+         <!-- Amends: Se-Designer: 22-05-2018 -->
+
+        <div class="content-nav">
+            <div class="phone-number dt-phone-number">
+                      
+                <a id="aPhoneNumber" href="tel:02038831740"><i class="fa fa-skype" aria-hidden="true">&nbsp;</i><i class="fa fa-phone-square" aria-hidden="true" style="margin-right: 0;"></i>
+                    <span id="spPhoneNumber">
+                        0203 883 1740</span></a>
+            </div>
+
+            <div class="main-menu">
+                <div class="hide_desktop">
+                    <div class="side-panel-header clearfix hide_desktop">
+                        <h4 class="txt_white">Main Menu</h4>
+                        <a class="button close close-menu"><i class="fa fa-close" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <nav>
+                    <a class="flex" href="https://www.bestonlineholidays.co.uk/"><span>Search</span> <i class="icon-chevron-right" aria-hidden="true"></i></a>
+                <!--          <a class="flex" href="https://www.bestonlineholidays.co.uk/shortlist.aspx"><span>Shortlist <span id="spShortListCount" class="notification off">0</span></span> <i class="icon-chevron-right" aria-hidden="true"></i></a>
+                 
+              <a class="flex" href="https://www.bestonlineholidays.co.uk/managebookinglogin.aspx"><span>My Booking</span> <i class="icon-chevron-right" aria-hidden="true"></i></a>
+-->                    
+                    <div class="hide_desktop">
+                        <a href="https://www.bestonlineholidays.co.uk/careers.aspx"><span>Careers</span> <i class="icon-chevron-right" aria-hidden="true"></i></a>
+                        <a class="flex" href="https://www.bestonlineholidays.co.uk/"><span>Terms</span> <i class="icon-chevron-right" aria-hidden="true"></i></a>
+                    </div>
+
+                    <div class="mobile-bonding clearfix">
+                        <a class="mb" href="#" target="_blank">
+                            <!--Amends: Se-Designer-->
+                            <img src="https://travelzoo.bestonlineholidays.co.uk/images/ATOL_Protected.svg" alt="ATOL Icon" title="ATOL 12016. Click to verify." style="max-width: 50px; height: 73px !important">
+							<!--Amends: Se-Designer 22-05-2021-->
+                        </a>
+                        <a class="mb" href="#" target="_blank">
+							<!--Amends: Se-Designer 22-05-2018-->
+                             <img src="https://travelzoo.bestonlineholidays.co.uk/images/TTA_0.svg" alt="ABTA Icon" title="ABTA P6654. Click to verify" style="max-width: 90px; height: 73px !important">
+							 <!--Amends: Se-Designer 22-05-2021-->
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+        <div class="bonding">
+            <div class="flex center header-icons">
+
+                <!--Amends: Se-Designer 22-05-2018-->
+                <img src="https://travelzoo.bestonlineholidays.co.uk/images/ATOL_Protected.svg" alt="ATOL Icon" title="ATOL 12016." style="height: 50px; margin: 0 10px 0 10px; padding: 0 0 0 0;">
+                <img src="https://travelzoo.bestonlineholidays.co.uk/images/TTA_0.svg" alt="TTA" title="Travel trust association" style="height: 50px; margin: 0 10px 0 10px; padding: 0 0 0 0;">
+				
+                <!--<a class="price-match inline_popup" href="#pricematch" data-toggle="modal" data-target="#myModal">
+                    <img src="<.?= base_url(); ?>images/usp_deposit.svg?2" alt="Price Match Icon" title="Price match guarantee" style="height: 50px; margin: 0 10px 0 10px; padding: 0 0 0 0;">
+                </a>-->
+
+               <!-- <a class="deposits inline_popup" href="#lowdeposits" data-toggle="modal" data-target="#myModal2">
+                    <img src="<.?= base_url(); ?>images/usp_payments.svg?3" alt="0% Interest Icon" title="Deposits with 0% Monthly Payments" style="height: 50px; margin: 0 10px 0 10px; padding: 0 0 0 0;">
+                </a>-->
+				<!--Amends: Se-Designer 22-05-2018-->
+            </div>
+        </div>
+        
+        <div class="content-nav-mobile">
+            <div class="phone-number">
+				<!--Amends: Se-Designer 22-05-2018-->
+                <a id="aMNumber" class="button" href="tel:02038831740"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+				<!--Amends: Se-Designer 22-05-2018-->
+            </div>
+            <div class="menu">
+                <a class="show-menu button"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+</header>
+      	<div class="modal fade" id="myModal" role="dialog" style="color: #002340;">
+						<div class="modal-dialog">
+
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title" style="color: #002340 !important; font-weight: 600; font-size: 1.313em; text-align: center;">At SuperEscapes we promise you the lowest prices available.</h4>
+								</div>
+								<p style="color: #002340; line-height: 15px; padding: 0 15px;text-align: center;"><small>If you make an online booking and later find your holiday combination on sale, and available, at a lower price somewhere else on the internet, we will refund the difference to you.</small>
+								</p>
+								<div class="modal-body">
+									<strong style="color: #002340;text-align: center; display: block;">Terms and conditions</strong> <br>
+									<small>
+										<ul style="text-align: left; color: #002340;">
+											<li>The claim must be from the lead passenger on the booking.</li>
+											<li>We can only price match a booking that has been made online.</li>
+											<li>The lower price holiday must be accurately priced, available to book immediately online and be from an abta bonded company.</li>
+											<li>The policy does not apply to bookings of 9 passengers or more.</li>
+											<li>The policy only applies when both flights and accommodation are booked together under the same reference number, this does not apply to individually booked elements the price match is only valid on the total holiday cost and not individually priced elements.
+											</li>
+											<li>Bestonlineholidays is an independent travel agent and does not organise package&nbsp;holidays. To make a claim It must be an exact match, for example, several companies now operate both a charter airline and a no frills airline and we do not price match from one to the other. Neither do we match a tailor made holiday against a package holiday</li>
+											<li>This price match cannot be part of a discounted price due to&nbsp;a voucher or loyalty scheme redemption</li>
+											<li>We at bestonlineholidays must be able to verify that the competitors price is based on exactly the same products booked, therefore you must email a screenshot of the final page of the booking process of the competitors website to <a title="blocked::mailto:bookings@bestonlineholidays.co.uk" href="/cdn-cgi/l/email-protection#f5979a9a9e9c9b9286b5979086819a9b999c9b909d9a999c91948c86db969adb809e"><span class="__cf_email__" data-cfemail="e3818c8c888a8d8490a3818690978c8d8f8a8d868b8c8f8a87829a90cd808ccd9688">[email&#160;protected]</span></a> putting the word 'Price Match' in the subject. We cannot accept responsibility were you have failed to send us the information requested</li>
+											<li>The email must be sent to <a title="blocked::mailto:bookings@bestonlineholidays.co.uk" href="/cdn-cgi/l/email-protection#086a67676361666f7b486a6d7b7c67666461666d606764616c69717b266b67267d63"><span class="__cf_email__" data-cfemail="74161b1b1f1d1a130734161107001b1a181d1a111c1b181d10150d075a171b5a011f">[email&#160;protected]</span></a> within 24 hours of placing your online booking.</li>
+											<li>Refunds, if applicable will only be made to the card used to purchase the holiday.<br> We are unable to accept price matches for a booking that departs within 14 days of the date booked. </li>
+										</ul>
+										<p style="padding-bottom: 15px;">
+											<small style="font-size: .76em;	line-height: 1.2; color: #002340; ">We reserve the right to refuse and claim where we are unable to substantiate the
+						claim to our satisfaction and in accordance with the above points. We reserve the
+						right to remove this offer at any time.</small>
+										</p>
+									</small>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+					<div class="modal fade" id="myModal2" role="dialog" style="color: #002340;">
+						<div class="modal-dialog">
+
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header" style="padding: 0;">
+									<button type="button" class="close" data-dismiss="modal">×</button>
+								</div>
+								<div class="modal-body" style="padding: 0;">
+									<div class="fancybox-skin" style="padding: 0px; width: auto; height: auto;">
+										<div class="fancybox-outer">
+											<div class="fancybox-inner" style="overflow: auto; width: 480px; height: auto;">
+												<div id="lowdeposits" style="max-width: 480px;" class="padded center">
+													<div class="bg_1">
+
+														<img src="https://www.bestonlineholidays.co.uk/Images/Logo.png" style="width: 100%; background: #fff;" alt="Low Deposits">
+													</div>
+													<p>
+														With our low deposits and 0% monthly payments, you can book ahead and secure your holiday from as little as £49 per person, paying the final balance up until 14 days before departure
+													</p>
+													<p>
+														Sit back, relax and look forward to your trip without the financial worry.
+													</p>
+													<p>
+														<small class="light">Subject to supplier availability. Terms and conditions apply.</small>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>  
+        <!--Banner Search Box-->
+       <!--<div class="search_fil desktop">
+             <iframe width='100%' height='500' src="https://www.bestonlineholidays.co.uk/search.aspx?src=emails" frameborder="0" scrolling="no" allowfullscreen style="height:500px;">
+            </iframe>
+        </div>-->
+        <div class="body_box" style="margin-bottom: 50px !important">
+            <style>
+    /*changes have done on 1-15-2019 */
+    a.big {overflow: hidden;height: 339px;display: inline;}
+    
+    .container .gallery a.big img{ height:498px;max-height:100%;object-fit: cover;}
+    @media screen and (max-width:768px){.container .gallery a.big img{height:400px;}.gallery{height:250px;}.container .gallery a img{height:126px;}}
+    @media screen and (max-width:414px){.container .gallery a.big img{height:225px;} .gallery{height:225px;}
+    @media screen and (max-width:375px){.container .gallery a.big img{height:225px;} .gallery{height:225px;}
+    @media screen and (max-width:320px){.gallery{height:209px;}.container .gallery a.big img{height:209px;}}
+</style>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                <div class="main-heading">
+					<h1>
+                    5<sup>*</sup>                    ALL INCLUSIVE KOS BEACH ESCAPE<span class="unhighlight-2"> 
+						<div class="hide_desktop">from </span>£<span class="needtest"><strong>499</strong>pp</span><sup class="price-pp">pp</sup></h1>
+					<h2><ul class="list-inline">
+                        <li><i class="fa fa-star"></i></li> <li><i class="fa fa-star"></i></li> <li><i class="fa fa-star"></i></li> <li><i class="fa fa-star"></i></li> <li><i class="fa fa-star"></i></li> 
+                    </ul>
+                    Pelagos Suites Hotel & Spa</h2>
+                    <p><i class="fa fa-map-marker"></i> Kos Town, Greece                    </p>
+                    </div>
+						
+					
+					<br>
+						<!--<p>
+						<div>from<span class="deal__price">£/*<.?php echo $tzoffer['price']; ?>*/</span>pp</div></p>-->
+						<!--Saving Upto /*<.?.php echo $tzoffer['save_percent']; ?*/>%-->
+                    
+                </div>
+				
+                <div class="gallery_view">
+                    <div class="gallery">
+					                           <a href="https://travelzoo.bestonlineholidays.co.uk/sliders/16552036830_1kos.jpg" class="big"><img src="https://travelzoo.bestonlineholidays.co.uk/sliders/16552036830_1kos.jpg" title="ALL INCLUSIVE KOS BEACH ESCAPE" /></a>
+                                    
+					                           <a href="https://travelzoo.bestonlineholidays.co.uk/sliders/0_16552024740_1pelagos-suites-hotel.jpg" class="normal"><img src="https://travelzoo.bestonlineholidays.co.uk/sliders/0_16552024740_1pelagos-suites-hotel.jpg" title="ALL INCLUSIVE KOS BEACH ESCAPE" /></a>
+                                    
+					                           <a href="https://travelzoo.bestonlineholidays.co.uk/sliders/1_16552024740_2pelagos-suites-hotel.jpg" class="normal"><img src="https://travelzoo.bestonlineholidays.co.uk/sliders/1_16552024740_2pelagos-suites-hotel.jpg" title="ALL INCLUSIVE KOS BEACH ESCAPE" /></a>
+                                    
+					                           <a href="https://travelzoo.bestonlineholidays.co.uk/sliders/2_16552024740_3studio-suite.jpg" class="normal"><img src="https://travelzoo.bestonlineholidays.co.uk/sliders/2_16552024740_3studio-suite.jpg" title="ALL INCLUSIVE KOS BEACH ESCAPE" /></a>
+                                    
+					                           <a href="https://travelzoo.bestonlineholidays.co.uk/sliders/3_16552024740_4pelagos-suites-hotel.jpg" class="normal"><img src="https://travelzoo.bestonlineholidays.co.uk/sliders/3_16552024740_4pelagos-suites-hotel.jpg" title="ALL INCLUSIVE KOS BEACH ESCAPE" /></a>
+                                    
+					                           <a href="https://travelzoo.bestonlineholidays.co.uk/sliders/4_16552024740_5pelagos-suites-hotel.jpg" class="normal"><img src="https://travelzoo.bestonlineholidays.co.uk/sliders/4_16552024740_5pelagos-suites-hotel.jpg" title="ALL INCLUSIVE KOS BEACH ESCAPE" /></a>
+                                    
+					                           <a href="https://travelzoo.bestonlineholidays.co.uk/sliders/5_16552024740_6presidential-suite.jpg" class="normal"><img src="https://travelzoo.bestonlineholidays.co.uk/sliders/5_16552024740_6presidential-suite.jpg" title="ALL INCLUSIVE KOS BEACH ESCAPE" /></a>
+                                    
+					                           <a href="https://travelzoo.bestonlineholidays.co.uk/sliders/6_16552024740_7executive-suite-with.jpg" class="normal"><img src="https://travelzoo.bestonlineholidays.co.uk/sliders/6_16552024740_7executive-suite-with.jpg" title="ALL INCLUSIVE KOS BEACH ESCAPE" /></a>
+                                    
+					                           <a href="https://travelzoo.bestonlineholidays.co.uk/sliders/7_16552024740_8junior-suite-with-shared.jpg" class="normal"><img src="https://travelzoo.bestonlineholidays.co.uk/sliders/7_16552024740_8junior-suite-with-shared.jpg" title="ALL INCLUSIVE KOS BEACH ESCAPE" /></a>
+                                    
+					                           <a href="https://travelzoo.bestonlineholidays.co.uk/sliders/8_16552024740_9superior-suite.jpg" class="normal"><img src="https://travelzoo.bestonlineholidays.co.uk/sliders/8_16552024740_9superior-suite.jpg" title="ALL INCLUSIVE KOS BEACH ESCAPE" /></a>
+                                    
+												
+                      
+                        <div class="clear"></div>
+						
+                    </div>
+                     <div class="mphone-wrapper hide_desktop">
+						 	
+						
+      <a class="phone" href="tel:#tel:02038831740"><span>0203 883 1740</span></a>
+    </div>
+					
+                    
+                    
+                    <div class="price_offer hide_mobile">
+                        <span>CALL US NOW</span>
+                         <span class="mobile">CALL NOW</span>
+                        <h1><a href="tel:02038831740"><i class="fa fa-phone"></i> 0203 883 1740</a></h1>
+                        <h1 style="font-size:12px; letter-spacing: 0;padding-top:10px;">Limited availability</h1>
+                    </div>
+                </div>
+             
+            
+            	                 
+                <div class="dates_dealhightlights">					
+                    <div class="row">
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <div class="dates">
+                                <h1 id="dates">&nbsp;Dates</h1>
+								
+					
+					                                <div class="dates_here" id="dates_top">
+                                    <div class="deal__dates">
+<div class="deal__year" id="deal__year_1">
+<div class="deal__months">
+<div class="deal__yearName">London Departures 7 Nights From &pound;499 pp</div>
+
+<div class="deal__month"><span>Jun 2022 &pound;1839</span><span> 27th, 28th</span></div>
+
+<div class="deal__month"><span>Jul 2022 &pound;1099</span><span> 13th, 15th</span></div>
+
+<div class="deal__month"><span>Aug 2022 &pound;999</span><span> 31st</span></div>
+
+<div class="deal__month"><span>Sep 2022 &pound;769</span><span> 20th, 22nd, 29th</span></div>
+
+<div class="deal__month"><span>Oct 2022 &pound;499</span><span> 24th, 25th</span></div>
+</div>
+</div>
+
+<div class="deal__year" id="deal__year_2">
+<div class="deal__months">
+<div class="deal__yearName">From London Gatwick</div>
+</div>
+</div>
+
+<div class="deal__year" id="deal__year_3">
+<div class="deal__months">
+<div class="deal__yearName">Manchester Departures 7 Nights From &pound;629 pp</div>
+
+<div class="deal__month"><span>Jun 2022 &pound;1869</span><span> 23rd, 29th</span></div>
+
+<div class="deal__month"><span>Jul 2022 &pound;999</span><span> 13th, 15th</span></div>
+
+<div class="deal__month"><span>Aug 2022 &pound;1099</span><span> 21st, 31st</span></div>
+
+<div class="deal__month"><span>Sep 2022 &pound;839</span><span> 21st, 30th</span></div>
+
+<div class="deal__month"><span>Oct 2022 &pound;629</span><span> 4th, 6th</span></div>
+</div>
+</div>
+
+<div class="deal__year" id="deal__year_4">
+<div class="deal__months">
+<div class="deal__yearName">Birmingham Departures 7 Nights From &pound;619 pp</div>
+
+<div class="deal__month"><span>Jun 2022 &pound;1819</span><span> 22nd, 28th</span></div>
+
+<div class="deal__month"><span>Jul 2022 &pound;1139</span><span> 13th, 14th</span></div>
+
+<div class="deal__month"><span>Aug 2022 &pound;1069</span><span> 31st</span></div>
+
+<div class="deal__month"><span>Sep 2022 &pound;839</span><span> 20th, 29th</span></div>
+
+<div class="deal__month"><span>Oct 2022 &pound;619</span><span> 4th, 11th</span></div>
+</div>
+</div>
+
+<div class="deal__year" id="deal__year_5">
+<div class="deal__months">
+<div class="deal__yearName">Bristol Departures 7 Nights From &pound;579 pp</div>
+
+<div class="deal__month"><span>Jun 2022 &pound;1929</span><span> 23rd, 27th</span></div>
+
+<div class="deal__month"><span>Jul 2022 &pound;1099</span><span> 14th, 15th</span></div>
+
+<div class="deal__month"><span>Aug 2022 &pound;1119</span><span> 21st</span></div>
+
+<div class="deal__month"><span>Sep 2022 &pound;779</span><span> 29th, 30th</span></div>
+
+<div class="deal__month"><span>Oct 2022 &pound;579</span><span> 10th, 14th, 17th</span></div>
+</div>
+</div>
+</div>
+                                    <!--<a href="#" id="loadMore">Load More Dates <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>-->
+                                </div>
+								
+                            <div class="hide_desktop dealhightlights">
+								<h1>&nbsp;Deal Highlights</h1>
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Return Flights</li><li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;7 Nights</li><li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Board Basis – All Inclusive</li><li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Travellers' Choice 2022</li>                                </ul>
+                            </div>
+                            </div>
+                            <div class="over_view">
+                                <h1>&nbsp;Description</h1>
+                                <div class="over_view_here">
+                                   <p>Pelagos Suites Hotel &amp; Spa is a beachfront hotel, spread in 45,000 m&sup2; in a quiet location on Lambi Beach, 2.5 km from the centre of Kos Town. It features 3 swimming pools, 2 tennis courts, a football court, water sildes, a spa and a floating restaurant.</p>
+
+<p>The elegant units at the Pelagos are equipped with air conditioning, satellite TVs and a balcony or terrace with garden or Aegean Sea and Asia Minor views. Each unit offers an open-plan living and sleeping area, and marble bathroom. Some feature well-equipped kitchenettes.</p>
+
+<p>Buffet breakfast is included in the room rate and is served in the restaurant overlooking the outdoor swimming pool. Lunch and dinner include a good selection of international food. Show-cooking stations, a separate dining space for children and a stylish bar where guests can enjoy drinks, are also provided.</p>
+
+<p>Younger guests can enjoy the 3 children&#39;s pools and the animation activities by specialized staff. A fitness centre, hot tubs and saunas are among the many wellness options provided on site.</p>
+
+<p>The Pelagos is ideally located for those looking for a quieter environment, but with a lively resort environment within easy reach.</p>
+                                </div>
+
+                            </div>
+                            <div class="hide_desktop map_location">
+                                <h4>&nbsp;Hotel Location Map</h4>
+                                <div class="over_view_here">
+                                    <iframe src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.214551633489!2d27.26798911464406!3d36.90913426926098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14be0ec95658fa11%3A0xf41953b4c4b6bbdb!2sPelagos%20Suites%20Hotel%20%26%20Spa!5e0!3m2!1sen!2sin!4v1655202140204!5m2!1sen!2sin" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                                                          <div class="over_view">
+                                <h1>&nbsp;Paramount's</h1>
+                                <div class="over_view_here">
+                                    <ol>
+                                        <li>Our prices are per  person, based on two people sharing, and are all subject to availability. </li>
+                                        <li>Prices are correct at time of publish are subject to change at any time.</li>
+                                        <li>Our offers are extremely  popular as many are exclusive or have added values therefore they operate on a  first come first served basis with limited availability.</li>
+                                        <li>Any upgrades and extras  not outlined with the promotional offers can be added however all costs will be  an additional cost payable by the  customer.</li>
+                                        <li>Once flights are  confirmed the onus is with the client/s to complete their own online check-in,  if you require this service or additional support from the team a supplement  will apply.</li>
+                                        <li>Our premium support package is not included  in the deal.</li>
+                                        <li>This website / landing page does not host live  pricing, we will endeavour to keep our prices updated as close to live prices  as possible.</li>
+                                        <li>Please note that this website is a price  service providing website and its motive is solely to assist  customers in sourcing the availability of travel-related goods and services and  to make permissible reservations or otherwise perform business with suppliers.  We do not operate any suppliers.</li>
+                                        <li>We do not share our client data with  any third parties.</li>
+                                        <li>We are TTA bonded and ATOL protected.</li>
+                                        <li>If you are banned from  flying with any airline we will be forced to cancel your holiday and refund  would be processed without any notice.</li>
+                                        <li>Any refunds made by us will take 7-10  business days,</li>
+                                        <li>We hold right to ask you for  any identity proof or payment authorisation code/s in order to avoid any fraudulent transactions.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div> <!--Column 8 Ends-->
+                      
+                        <div class="col-md-4 pl-0 col-sm-4 col-xs-12 pl-15" style="position:sticky;top:0;">
+						<div class="hide_mobile dealhightlights">
+							 <h1>Deal Price From</h1>
+							<p><span class="deal__price">£499</span>pp</p></div>
+                         
+                            
+                            <div class="hide_mobile dealhightlights">
+								<h1>Deal Highlights</h1>
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Return Flights</li><li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;7 Nights</li><li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Board Basis – All Inclusive</li><li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Travellers' Choice 2022</li>                                </ul>
+                            </div>
+                                                      
+                          
+                            					 <div class="hide_mobile map_location">
+                                <h4>Hotel Location Map</h4>
+                                <div class="over_view_here">
+                                    <iframe src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.214551633489!2d27.26798911464406!3d36.90913426926098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14be0ec95658fa11%3A0xf41953b4c4b6bbdb!2sPelagos%20Suites%20Hotel%20%26%20Spa!5e0!3m2!1sen!2sin!4v1655202140204!5m2!1sen!2sin" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                            </div>		
+            
+                 <div class="deal-highlights-head">
+                 <!--<h4>Deals.. Deals.. Deals.. For </h4>
+                </div>
+                <a href="<.?=$defweeklink; ?>" target="_blank"> 
+                <img src="<.?=$defweekimg; ?>" class="img-responisve" alt="Banner"/> </a>  -->  
+						
+				
+                                          <h1>&nbsp; Save up to 70%</h1>
+                            
+                            
+                            <div class="Sign_Up love-feedback">
+                               
+                            </div>
+                                                       
+                        </div>
+
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+
+	 <div class="row">
+                        <div class="col-md-12">
+                            <div class="travel_advice clearfix">
+                                <p><b>TRAVEL ADVICE:</b>The <a href="https://www.gov.uk/foreign-travel-advice" target="_blank">Foreign &amp; Commonwealth Office (FCO)</a> issues up-to-date travel advice on destinations, health, safety and security as well as information on passports and visas. We advise all passengers to check for any travel advice for the destination that they are travelling to. <a href="https://www.gov.uk/foreign-travel-advice" target="_blank">Click here to visit their website</a>.</p><br>
+                            </div>
+                        </div>
+                    </div>
+</section>
+<!--<footer>
+    <div class="container">
+        <div class="row" style="border: 0;">
+            <div class="col-md-12 col-sm-12">
+                <div class="bottom_offers">
+                    <h2>Featured Deals</h2>
+                    <ul>
+					                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>-->
+
+<style>
+   .vm-book-thi-deal{
+		background-color: #cf142b;
+        color: #fff;
+        font-size: 22px;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        display:block;
+        transition: 0.5s ease-out;
+	}
+	.vm-book-thi-deal:hover{
+		background-color: #5f9f46;
+		transition: 0.5s ease-in;
+		text-decoration: none;
+	}
+    	.vm-vote-banner{
+		border: 2px solid #B0B0B0;
+		color:#585858;
+		text-align: center;
+		margin-top: 20px;
+	}
+	.vm-vote-banner>p{
+		font-weight: bold;
+		padding: 5px;
+		margin-bottom: 0;
+		font-size: 13px;
+	}
+	.vm-vote-banner>p>span{ 
+		font-weight: bold;
+		color: #CD0003;
+	}
+	.price_offer {
+        bottom: 235px;
+	}
+	.dow {
+        padding: 0;
+	}
+	.subbtn {background-color:#00247d !important;}
+	@media (min-width: 1920px) {
+        .container {max-width: 1480px;}
+        .container .gallery a.big img {height: 507px;}
+        .gallery{height:508px;}
+    }
+	@media (max-width: 768px){
+        .vm-book-thi-deal {
+            font-size: 19px;
+        }
+    }
+</style>            
+            <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="e3e9181763f3b4774b1f4a66-text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-551025062bd24c7d"></script>
+        </div>
+        <section class="footer-sec">
+            <div class="footer-wrapper">
+    <div class="phone-wrapper hide_mobile">
+		      <a class="phone" href="tel:02038831740"><span>0203 883 1740</span></a>
+    </div>
+	<div class="mphone-wrapper-footer hide_desktop">
+      <a class="mphone-footer" href="tel:02038831740"><span>0203 883 1740</span></a>
+    </div>
+    <footer>
+      <div class="footer__content"><br>
+        <p>          
+          <div>Registered office: 37/38 Marshall Hse, 124 Middleton Road, Morden, Surrey, SM4 6RW</div>
+          <div>Trading address: 37/38 Marshall Hse, 124 Middleton Road, Morden, Surrey, SM4 6RW</div>
+        </p>
+		
+        <div class="partner-logos">
+          <a
+            class="logo-link"
+            title="View PTS details"
+            href="#"
+            target="_blank"
+          >
+            <img src="https://bestonlineholidays.co.uk/img/logo_tta.png" alt="Protected Trust Services Logo" />
+          </a>
+          <img
+            src="https://bestonlineholidays.co.uk/img/logo_payment-types.svg"
+            alt="payment type logos"
+            title="We accept VISA and MASTERCARD payments"
+          />
+        </div>
+
+        <p>
+          Best Online Holidays is a trading name for Chemm Business Ltd. Company registration no: 11123428. Best Online Holidays gives you 100% financial protection with all your monies being held in a Trust Account. You can be rest assured that you are safe when making a booking with Best Online Holidays. We are a member of Travel Trust Association (TTA), our TTA membership number is Q6238 and ATOL number is 12016
+        </p>
+
+        <p>
+          <a style="color:white; text-decoration: underline; cursor: pointer;" href="terms.html"
+            >Terms and Conditions</a
+          >  | <a style="color:white; text-decoration: underline; cursor: pointer;" href="privacy.html"
+          >Privacy Policy</a
+        >  | <a style="color:white; text-decoration: underline; cursor: pointer;" href="aboutus.html"
+          >About Us</a
+        >  | <a style="color:white; text-decoration: underline; cursor: pointer;" href="contactus.html"
+          >Contact Us</a
+        >  | <a style="color:white; text-decoration: underline; cursor: pointer;" href="traveladvice.html"
+          >Travel Advice</a
+        >
+        </p>
+		<p style="font-size: 8px;">All  of the flight-inclusive holidays on this website are financially protected by  the ATOL scheme but ATOL protection does not apply to all of the travel  products e.g<a name="_GoBack"></a>. car hire, transfers or hotel only bookings  not including a flight, offered on this website. This website will provide you  with information on the protection that applies in the case of each holiday and  travel service offered before you make your booking. Our terms and conditions  can be viewed by clicking the link <strong>here</strong>.  If you do not receive an ATOL Certificate, then the booking will not be ATOL  protected. If you do receive an ATOL Certificate but all parts of your trip are  not listed on it, those parts will not be ATOL protected. Please see our  booking conditions for information, or for more information about financial  protection and the ATOL Certificate go to: <a href="https://www.caa.co.uk/atol-protection">www.caa.co.uk/atol-protection</a>.</p>
+
+      </div>
+    </footer>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="e3e9181763f3b4774b1f4a66-text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="e3e9181763f3b4774b1f4a66-text/javascript"></script>
+<script src="https://travelzoo.bestonlineholidays.co.uk/assets/js/simple-lightbox.js" type="e3e9181763f3b4774b1f4a66-text/javascript"></script>
+
+<script type="e3e9181763f3b4774b1f4a66-text/javascript" src="https://travelzoo.bestonlineholidays.co.uk/assets/js/stick-to-me.js"></script> 
+
+<!-- livezilla.net PLACE SOMEWHERE IN BODY -->
+<script type="e3e9181763f3b4774b1f4a66-text/javascript" id="b203ed7ab7ea60931739e7372bee79d0" src="https://ukholidaychat.com/script.php?id=b203ed7ab7ea60931739e7372bee79d0" defer></script>
+<!-- livezilla.net PLACE SOMEWHERE IN BODY -->
+ 
+ <script type="e3e9181763f3b4774b1f4a66-text/javascript" id="demo2-javascript">
+    $(document).ready(function() {
+      $("#demo2").navgoco({accordion: true});
+    });
+    </script>
+<script type="e3e9181763f3b4774b1f4a66-text/javascript">
+	$(function(){
+		var $gallery = $('.gallery a').simpleLightbox();
+
+		$gallery.on('show.simplelightbox', function(){
+			console.log('Requested for showing');
+		})
+		.on('shown.simplelightbox', function(){
+			console.log('Shown');
+		})
+		.on('close.simplelightbox', function(){
+			console.log('Requested for closing');
+		})
+		.on('closed.simplelightbox', function(){
+			console.log('Closed');
+		})
+		.on('change.simplelightbox', function(){
+			console.log('Requested for change');
+		})
+		.on('next.simplelightbox', function(){
+			console.log('Requested for next');
+		})
+		.on('prev.simplelightbox', function(){
+			console.log('Requested for prev');
+		})
+		.on('nextImageLoaded.simplelightbox', function(){
+			console.log('Next image loaded');
+		})
+		.on('prevImageLoaded.simplelightbox', function(){
+			console.log('Prev image loaded');
+		})
+		.on('changed.simplelightbox', function(){
+			console.log('Image changed');
+		})
+		.on('nextDone.simplelightbox', function(){
+			console.log('Image changed to next');
+		})
+		.on('prevDone.simplelightbox', function(){
+			console.log('Image changed to prev');
+		})
+		.on('error.simplelightbox', function(e){
+			console.log('No image found, go to the next/prev');
+			console.log(e);
+		});
+	});
+</script>
+<script type="e3e9181763f3b4774b1f4a66-text/javascript">
+	$(window).scroll(function () {
+	  if ( $(this).scrollTop() > 620 && !$('#header').hasClass('open') ) {
+		$('#header').addClass('open');
+		$('#header').slideDown();
+	   } else if ( $(this).scrollTop() <= 620 ) {
+		$('#header').removeClass('open');
+		$('#header').slideUp();
+	  }
+	});
+</script>
+<script type="e3e9181763f3b4774b1f4a66-text/javascript">
+	$(document).ready(function(){
+		$(".sl-close").click(function(){
+			$(".simple-lightbox").hide();
+		});
+});
+</script>
+<script type="e3e9181763f3b4774b1f4a66-text/javascript">
+    $(window).on('load resize', function () {//SHOW/HIDE MONILE PANELS
+        //THIS WILL APPLY THE ACTIVE CLASS AND MOVE IT INTO VIEW WITH A CSS ANIMATION
+        //CLOSE BUTTONS WILL HIDE THE PANELS
+        // in large screen, If we go beyond 768 px wide - then hide mobile filter off canvas	
+        var win = $(this); //this = window
+        if (win.width() >= 769) { $(".main-menu").removeClass("active"); $("html").removeClass("no-scroll"); $("body").removeClass("pushed-right"); };
+    });
+
+    //SHOW/ HIDE SIDE PANEL PAYMENT
+    $(".show-menu").click(ShowMobileMenu);
+    $(".close-menu").click(HideMobileMenu);
+
+    function ShowMobileMenu() {
+        $(".main-menu").toggleClass("active");
+        $("html").toggleClass("no-scroll");
+        //$("body").toggleClass("pushed-right");
+        //ShowMobileMenu.preventDefault();
+    }
+    function HideMobileMenu() {
+        $(".main-menu").toggleClass("active");
+        $("html").toggleClass("no-scroll");
+        //$("body").toggleClass("pushed-right");
+        //HideMobileMenu.preventDefault();
+    }
+    
+     $(document).ready(function(){
+     $(".content").slice(0, 2).show();
+     $("#loadMore").on("click", function(e){
+      e.preventDefault();
+     $(".content:hidden").slice(0, 2).slideDown();
+     if($(".content:hidden").length == 0) {
+          $("#loadMore").text("").addClass("noContent");
+    }
+     });
+  
+    })
+    
+    $.stickToMe({
+                layer: '#stickLayer'
+            });
+    $('.Sign_Up').load('https://travelzoo.bestonlineholidays.co.uk/welcome/reusablesubscribe');
+    
+</script>
+
+        </section>
+        
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="e3e9181763f3b4774b1f4a66-|49" defer=""></script></body>
+</html>

@@ -1,0 +1,148 @@
+
+
+function certificateFileUploads(file) {
+ 
+	
+	var fileName=file+"CertUpload";
+	// alert(fileName);
+	var divName=file+"CertUploadDiv";
+	var photoName=file+"Photo";
+	var val=document.getElementById(fileName).value.split(".");
+	if(val.length>2) {
+		document.getElementById(fileName).value = "";
+		document.getElementById(divName).style.display = "none";
+		document.getElementById(divName+"PDF").style.display = "none";
+		 alert('File Name contains mulitple .(dot) \'s. Please rename the file name');
+		 return false;
+	}
+	var exe=document. getElementById(fileName).value.match(/\.(.+)$/)[1];
+	if(exe=="png" || exe=="PNG" || exe=="jpg" || exe=="JPG" || exe=="jpeg" || exe=="JPEG" || exe=="pdf" || exe=="PDF"){
+		if (document. getElementById(fileName).files[0].size / 1024 < 40  || document. getElementById(fileName).files[0].size / 1024 > 500) {
+			if (document. getElementById(fileName).files[0].size / 1024 <40 ) {
+				document.getElementById(divName).style.display = "none";
+				document.getElementById(divName+"PDF").style.display = "none";
+				document.getElementById(fileName).value = "";
+				alert("Uploaded Certificate size is below 40 KB, Please upload Certificate with 40 KB - 500 KB size.");
+			}else if (document. getElementById(fileName).files[0].size / 1024 > 40 ) {
+				document.getElementById(divName).style.display = "none";
+				document.getElementById(divName+"PDF").style.display = "none";
+				document.getElementById(fileName).value = "";
+				alert("Uploaded Certificate size exceeds 500KB, Please upload Certificate with 40 KB - 500 KB size.");
+			}
+
+
+		} else {
+			if(exe=="png" || exe=="PNG" || exe=="jpg" || exe=="JPG" || exe=="jpeg" || exe=="JPEG"){
+				document.getElementById(divName).style.display = "block";
+				document.getElementById(divName+"PDF").style.display = "none";
+				if (document. getElementById(fileName).files && document. getElementById(fileName).files[0]) {
+					var reader = new FileReader();
+					reader.onload = function(e) {
+						$('#'+photoName).attr('src', e.target.result);
+					};
+	
+					reader.readAsDataURL(document. getElementById(fileName).files[0]);
+				}
+			} else {
+				document.getElementById(divName).style.display = "none";
+				document.getElementById(divName+"PDF").style.display = "block";
+				document.getElementById(divName+"PDF").innerHTML = "No Preview Available";
+			}
+	   }
+	}else{
+		document.getElementById(fileName).value = "";
+		document.getElementById(divName).style.display = "none";
+		document.getElementById(divName+"PDF").style.display = "none";
+		 alert('Upload JPG (or) JPEG (or) PNG (or) PDF format only');
+	}
+	
+
+}
+
+
+$().ready(function() {
+
+
+	$('#photoFile').on('change',
+			function() {
+		var exe=document. getElementById("photoFile").value.match(/\.(.+)$/)[1];
+		if(exe=="png" || exe=="PNG" || exe=="jpg" || exe=="JPG" || exe=="jpeg" || exe=="JPEG"){
+			if (this.files[0].size / 1024 < 4  ||  this.files[0].size / 1024 > 50) {
+
+				if (this.files[0].size / 1024 <4 ) {
+					document.getElementById("PhotoDisplayDiv").style.display = "none";
+					document.getElementById("photoFile").value = "";
+					alert("Your Photograph size is below 4kb, Please upload Photo with 4 KB - 50 KB size");
+				}else if (this.files[0].size / 1024 > 50 ) {
+					document.getElementById("PhotoDisplayDiv").style.display = "none";
+					document.getElementById("photoFile").value = "";
+					alert("Your Photograph exceeds 50KB, Please upload Photo with 4 KB - 50 KB size");
+				}
+
+
+			} else {
+				//alert("Ok..");
+				document.getElementById("PhotoDisplayDiv").style.display = "block";
+
+				if (this.files && this.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function(e) {
+						$('#Photo')
+						.attr('src', e.target.result);
+					};
+
+					reader.readAsDataURL(this.files[0]);
+				}
+			}
+		}else{
+
+			document.getElementById("photoFile").value = "";
+			document.getElementById("PhotoDisplayDiv").style.display = "none";
+			 alert('Upload JPG (or) JPEG (or) PNG format only');
+		
+		}
+		
+
+	});
+
+	$('#signFile')
+	.on(
+			'change',
+			function() {
+				var exe=document. getElementById("signFile").value.match(/\.(.+)$/)[1];
+				if(exe=="png" || exe=="PNG" || exe=="jpg" || exe=="JPG" || exe=="jpeg" || exe=="JPEG"){
+				if (this.files[0].size / 1024 < 1  ||  this.files[0].size / 1024 > 30) {
+
+					if (this.files[0].size / 1024 < 1 ) {
+						document.getElementById("SignDisplayDiv").style.display = "none";
+						document.getElementById("signFile").value = "";
+						alert("Your Sign size is below 1kb, Please upload Sign with 1KB - 30KB size");
+					}else if (this.files[0].size / 1024 > 30 ) {
+						document.getElementById("SignDisplayDiv").style.display = "none";
+						document.getElementById("signFile").value = "";
+						alert("Your Sign exceeds 30KB, Please upload Sign with 1KB - 30KB KB size");
+					}
+
+				} else {
+					//alert("Ok..");
+					document.getElementById("SignDisplayDiv").style.display = "block";
+
+					if (this.files && this.files[0]) {
+						var reader = new FileReader();
+						reader.onload = function(e) {
+							$('#Sign').attr('src', e.target.result);
+						};
+
+						reader.readAsDataURL(this.files[0]);
+					}
+				}
+			}else{
+
+				document.getElementById("signFile").value = "";
+				document.getElementById("SignDisplayDiv").style.display = "none";
+				 alert('Upload JPG (or) JPEG (or) PNG format only');
+			
+			}
+			});
+
+});

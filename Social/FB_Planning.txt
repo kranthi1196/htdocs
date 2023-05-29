@@ -1,0 +1,38 @@
+
+Steps to Implement Link-Up(02/12/2022):
+
+	UI/FE Part
+
+1. Admin Profile
+============== Home =============== 		==== Status ====
+	1.1 Home
+	1.2 Group Message
+	1.3 Search Display
+	1.4 Settings
+	1.5 Users Management
+	1.6 Feedback
+	1.7 Password Setup/Recovery
+============== Logout =============== 		==== Status ====
+	2.1 Logout
+============== View Profile ========== 		==== Status ====
+	3.1 About
+	3.2 Timeline Photos Album
+	3.3 Photos
+	3.4 Search Display
+	3.5 View Profile
+
+2. User Profile
+	2.1 Index					-done-
+	2.2 Logout
+	2.3 Profile Creation / Updation			-done-
+	2.4 View Profile
+	2.5 Password Setup/Recovery
+	2.6 Gender
+============== Gender =============== 		==== Status ====
+	2.6.1 Male
+	2.6.2 Female
+
+3. General View
+
+	Backend Part (with DB)
+

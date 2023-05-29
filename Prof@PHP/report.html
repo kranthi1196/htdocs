@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission Example</title>
+
+<style>
+.form{
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    font-weight: bold;
+}
+
+</style>
+
+
+<form class="form" action="report.php" method="post">
+    <caption> <b><u> User Details: </u></b></caption>
+    <br>
+    <br>
+    <table>
+        <tr><td>First Name:</td><td><input type="text" name="first_name"><br></td>
+    </tr>
+    <tr><td> Last Name:</td> <td><input type="text" name="last_name"><br></td></tr>
+    <tr><td> E-mail: </td><td><input type="email" name="email"><br> </td></tr>
+    <tr><td> When did it happen? </td> <td><input type="text" name="whenithappened"><br></td></tr>
+    <tr> <td> How long you were gone? </td> <td><input type="text" name="howlong"><br> </td></tr>
+    <tr><td> How many did you see? </td> <td><input type="text" name="howmany"><br></td></tr>
+    <tr><td> Describe them:</td><td> <input type="text" name="describe"><br></td></tr>
+    <tr><td> What did they do to you? </td><td><input type="text" name="whatdidthey" id=""><br></td></tr>
+    <tr><td> Have you seen my dog Fang? </td><td><input type="radio" value="yes" name="fang" id="yes">Yes
+    <input type="radio" value="no" name="fang" id="no">No</td></tr>
+    <tr><td></td><td><br><input type="submit"><br> </td></tr>
+</table>
+
+
+
+</form>
+
+</head>
+<body>
+    
+</body>
+</html>

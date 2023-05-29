@@ -1,0 +1,72 @@
+/* liScroll styles */
+
+.tickercontainer { /* the outer div with the black border */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    background: #fff;
+    border-bottom: solid 1px #f7f7f7;
+    box-shadow: 0px 3px 6px rgba(239, 239, 239, 0.86);
+}
+/* that serves as a mask. so you get a sort of padding both left and right */
+.tickercontainer .mask { 
+	position: relative;
+	width: 100%;
+	overflow: hidden;padding-left: 110px; height: 45px;;
+}
+ul.newsticker { /* that's your list */
+position: relative;
+list-style-type: none;
+margin: 0;
+padding: 0;
+
+}
+#skip_content{padding-top:20px}
+/* important: display inline gives incorrect results when you check for elem's width */
+ul.newsticker li a{color:#1f1f1f
+}
+ul.newsticker li {
+    float: left;
+    margin: 10px 3px;
+    padding: 0;
+}
+
+ul.er-controls{
+list-style: none;
+    display: inline-block;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #039de3;
+	margin:0
+}
+ul.er-controls > li{
+display: inline-block;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    width: 30px;
+    height: 46px;
+    border-right: solid 1px #fff;
+ 
+}
+ul.er-controls  li.fa:before{color: #fff;
+    line-height: 46px;}
+ul.er-controls > li:hover{
+	background: #1c529b;
+	cursor: pointer;
+}
+.scroll_title{ 
+    
+    position: absolute;
+    padding: 12px 10px;
+    top: 0;
+    color: #fff; background: #44aba3;
+    background: -moz-linear-gradient(45deg, #44aba3 5%, #2989cc 93%);
+    background: -webkit-linear-gradient(45deg, #44aba3 5%,#2989cc 93%);
+    background: linear-gradient(45deg, #44aba3 5%,#2989cc 93%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44aba3', endColorstr='#2989cc',GradientType=1 );}

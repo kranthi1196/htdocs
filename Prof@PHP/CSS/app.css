@@ -1,0 +1,56 @@
+
+body{
+    align-items: center;
+    background-color: rgb(127, 200, 252);
+    width: 1000px;
+    height: auto;
+   /* border: 1px solid black;*/
+   
+
+
+}
+.tspsc_logo{
+    padding-top: 20px;
+    width: 100px;
+    height: 100px;
+    max-width: 70px;
+    max-height: 70px;
+}
+h1{
+    color: brown;
+    font-size: 20px;
+}
+h2{
+    font-size: inherit;
+}
+.slnum{
+    align-items: center;
+    text-align: center;
+    width: 35px;
+}
+table, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 20px;
+    width:980px;
+    padding: 15px;
+    
+  }
+  .tdwidth{
+    width: 330px;
+  }
+td{
+    height: 25px;
+    padding: 10px;
+}
+.td7{
+    width: 123px;
+}
+td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .edu_details{
+    width: 1000px;
+  }
