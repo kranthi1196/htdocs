@@ -1,0 +1,446 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Add travelzoo</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link href="https://emails.bestonlineholidays.co.uk/assets/css/admin1/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="https://emails.bestonlineholidays.co.uk/assets/css/admin1/style.css" rel="stylesheet" type="text/css" /><link href="https://emails.bestonlineholidays.co.uk/assets/css/admin1/skin-blue.min.css" rel="stylesheet" type="text/css" />		
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    </head>
+    <body class="hold-transition skin-blue sidebar-mini"> 
+        <div class="wrapper">  
+            <!-- Main Header -->
+            <header class="main-header">		    
+                <!-- Logo --> 
+                <a href="https://emails.bestonlineholidays.co.uk/admin/index" class="logo"> 
+                    <!-- mini logo for sidebar mini 50x50 pixels --> 
+                    <span class="logo-mini"><b>B</b>KN</span> 
+                    <!-- logo for regular state and mobile devices --> 
+                    <span class="logo-lg"><b>BOH Travelzoo</b></span> </a> 			    
+                <!-- Header Navbar -->
+                <nav class="navbar navbar-static-top" role="navigation"> 
+                    <!-- Sidebar toggle button--> 
+                    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"> <span class="sr-only">Toggle navigation</span> </a> 
+                    <!-- Navbar Right Menu -->
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+					<!-- User Account Menu -->
+                            <li class="dropdown user user-menu"> 
+                                <!-- Menu Toggle Button --> 
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+                                    <!-- The user image in the navbar--> 
+                                    <img src="https://emails.bestonlineholidays.co.uk/assets/images/user.png" class="user-image" alt="User Image"> 
+                                    <!-- hidden-xs hides the username on small devices so only the image appears. --> 
+                                    <span class="hidden-xs">Saleem </span> </a>
+                                <ul class="dropdown-menu">
+                                    <!-- The user image in the menu -->
+                                    <li class="user-header"> <img src="https://emails.bestonlineholidays.co.uk/assets/images/user.png" class="img-circle" alt="User Image">
+                                      <p> Saleem  <!-- <small>Member since Nov. 2012</small> --> </p>
+                                    </li>
+                                
+                                    <li class="user-footer">
+                                        <div class="pull-left"> <a href="https://emails.bestonlineholidays.co.uk/admin/profile" class="btn btn-default btn-flat">Profile</a> </div>
+                                        <div class="pull-right"> <a href="https://emails.bestonlineholidays.co.uk/admin/logout" class="btn btn-default btn-flat">Sign out</a> </div>
+                                    </li>
+                                </ul>
+                            </li>
+                    <!-- Control Sidebar Toggle Button -->
+
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar"> 
+
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar"> 
+
+                    <!-- Sidebar user panel (optional) -->
+                    <div class="user-panel">
+                        <div class="pull-left image"> <img src="https://emails.bestonlineholidays.co.uk/assets/images/user.png" class="img-circle" alt="User Image"> </div>
+                        <div class="pull-left info">
+                            <p>Saleem </p>
+                            <!-- Status --> 
+                            <a href="#"><i class="fa fa-circle text-success"></i> Online</a> </div>
+                    </div>
+
+                    <!-- search form (Optional) -->
+                    <form action="#" method="get" class="sidebar-form">
+                        <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+                            </span> </div>
+                    </form>
+                    <!-- /.search form --> 
+
+                    <!-- Sidebar Menu -->
+                    <ul class="sidebar-menu">
+                        <!-- Optionally, you can add icons to the links -->
+
+                                                    <li class=""><a href="https://emails.bestonlineholidays.co.uk/admin/index"><i class="fa fa-table"></i> <span>Dashboard</span></a></li>	        
+                                                        <li class=""><a href="https://emails.bestonlineholidays.co.uk/admin/clearCache"><i class="fa fa-table"></i> <span>Clear Cache</span></a></li>
+                                                        <li class=""><a href="https://emails.bestonlineholidays.co.uk/admin/agents"><i class="fa fa-table"></i> <span>Agents</span></a></li>
+                                                    <li class="active"> <a href="https://emails.bestonlineholidays.co.uk/admin/travelzoo"><i class="fa fa-list"></i><span>Travel zoo</span></a> </li>
+                                                        <li class=""> <a href="https://emails.bestonlineholidays.co.uk/admin/travelzoo_images"><i class="fa fa-list"></i><span>Travelzoo Images</span></a> </li>
+                                                        <li class=""> <a href="https://emails.bestonlineholidays.co.uk/admin/add_resorts"><i class="fa fa-list"></i><span>Travelzoo Resorts</span></a> </li>
+                                                        <li class=""> <a href="https://emails.bestonlineholidays.co.uk/admin/add_media"><i class="fa fa-list"></i><span>Media Types</span></a> </li>
+                                                        <li class=""> <a href="https://emails.bestonlineholidays.co.uk/admin/Featuredeals"><i class="fa fa-list"></i><span>Feature Deals</span></a> </li>
+                                                        <li class=""> <a href="https://emails.bestonlineholidays.co.uk/admin/Bannerdeals"><i class="fa fa-list"></i><span>Banner Deals</span></a> </li>
+                                                        <li class=""> <a href="https://emails.bestonlineholidays.co.uk/admin/Themedetails"><i class="fa fa-list"></i><span>Theme Details</span></a> </li>
+                            	
+
+                    </ul>
+                    <!-- /.sidebar-menu --> 
+                </section>
+                <!-- /.sidebar --> 
+            </aside>
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">    
+                  <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>Add Travelzoo offer</h1>
+      <ol class="breadcrumb">
+          <li><a href="https://emails.bestonlineholidays.co.uk/admin/index"><i class="fa fa-dashboard"></i>Home</a></li>
+          <li><a href="https://emails.bestonlineholidays.co.uk/admin/destinations">Static Pages</a></li>
+          <li class="active">Add Static Page</li>
+      </ol>
+  </section>
+  <section class="content" style="background:#fff;">
+      <div class="row">           
+          <!-- right column -->
+          <div class="col-md-10 ">
+              <!-- Horizontal Form -->
+              <div class="box box-info ">
+                  <!-- /.box-header -->
+                  <!-- form start -->
+                  You have successfully created new record<form action="https://emails.bestonlineholidays.co.uk/admin/add_travelzoo" name="add_static_page" class="form-horizontal" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                  <div class="box-body">
+                      
+                        
+                                            <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">Offer Url</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" name="offer_url" placeholder="Offer Url" value="" required>
+                                                        </div>									
+                      </div>
+                                           <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">Offer Image Url</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" name="hotel_addr" placeholder="hotel_addr" value="" required>
+                                                        </div>									
+                      </div>
+  <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">File Name</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" name="url_strings" placeholder="hotel-name/hotel-addrss" value="" required>
+                                                        </div>									
+                      </div>
+
+                      <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">More Links</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" name="price" placeholder="price"required value="">
+                                                        </div>									
+                      </div>
+
+                       <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">Email</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" name="heading" placeholder="heading" value="" required>
+                                                        </div>									
+                      </div> 
+                      <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">Meta Title</label>
+                          <div class="col-sm-10">
+                              <textarea type="text" class="form-control" name="title" placeholder="meta Title"required></textarea>
+                                                        </div>									
+                      </div>
+
+                      <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">star rating</label>
+                             <div class="col-sm-10">	
+                             <select class="form-control" name="star">
+                                          <option value>Choose</option>
+                                          <option  value=1>1</option><option  value=2>2</option><option  value=3>3</option><option  value=4>4</option><option  value=5>5</option><option  value=7>7</option>	              			                   
+                                      </select>
+                                                        </div>									
+                      </div>
+                      <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">Nights</label>
+                           <div class="col-sm-10">	
+                             <select class="form-control" name="nights">
+                                          <option value>Choose</option>
+                                          <option  value=1>1</option><option  value=2>2</option><option  value=3>3</option><option  value=4>4</option><option  value=5>5</option><option  value=6>6</option><option  value=7>7</option><option  value=8>8</option><option  value=14>14</option><option  value=15>15</option>	              			                   
+                                      </select>
+                                                        </div>									
+                      </div>
+                      <div class="form-group">
+                          <label class="col-sm-2 control-label">Board Basis</label>
+                          <div class="col-sm-9">
+                              <select class="form-control" name="board">
+                                  <option value>Select</option>
+                                  <option  value=AI>All Inclusive</option><option  value=RO>Room Only</option><option  value=BB>Bed and Breakfast</option><option  value=SC>Self Catering</option><option  value=HB>Half Board</option><option  value=FB>Full Board</option>					                    		                   
+                              </select>
+                                                        </div>
+                        </div>	  
+
+                         <div class="form-group">
+                          <label class="col-sm-2 control-label"> Resort Name</label>
+                          <div class="col-sm-9">
+                              <select class="form-control" name="resort">
+                                  <option value>Select</option>
+                                  <option  value=DUBAI>DUBAI</option><option  value=PHUKET>PHUKET</option><option  value=MALLORCA>MALLORCA</option><option  value=CYPRUS>CYPRUS</option><option  value=RHODES>RHODES</option><option  value=MADEIRA>MADEIRA</option><option  value=ALGARVE>ALGARVE</option><option  value=TURKEY>TURKEY</option><option  value=MAJORCA>MAJORCA</option><option  value=TENERIFE>TENERIFE</option><option  value=CORFU>CORFU</option><option  value=MARMARIS>MARMARIS</option><option  value=SANTORINI>SANTORINI</option><option  value=RHODES>RHODES</option><option  value=HALKIDIKI>HALKIDIKI</option><option  value=CROATIA>CROATIA</option><option  value=CRETE>CRETE</option><option  value=ZAKYNTHOS>ZAKYNTHOS</option><option  value=KOS>KOS</option><option  value=BARBADOS>BARBADOS</option><option  value=ZANTE>ZANTE</option><option  value=IBIZA>IBIZA</option><option  value=HURGHADA>HURGHADA</option><option  value=BODRUM>BODRUM</option><option  value=ICMELER>ICMELER</option><option  value=ZAKYNTHOS>ZAKYNTHOS</option><option  value=ANTALYA>ANTALYA</option><option  value=DALAMAN>DALAMAN</option><option  value=COSTA DEL SOL>COSTA DEL SOL</option><option  value=TALLINN>TALLINN</option><option  value=MALTA>MALTA</option><option  value=COSTA-DEL-SOL>COSTA-DEL-SOL</option><option  value=COSTADELSOL>COSTADELSOL</option><option  value= CANARIA> CANARIA</option><option  value=GRAN CANARIA>GRAN CANARIA</option><option  value=LANZAROTE>LANZAROTE</option><option  value=FUETEVENTURA>FUETEVENTURA</option><option  value=FUERTEVENTURA>FUERTEVENTURA</option><option  value=gran_canaria>gran_canaria</option><option  value=fuerteventura>fuerteventura</option><option  value=lanzarote>lanzarote</option><option  value=MARRAKECH>MARRAKECH</option><option  value=marrakech>marrakech</option><option  value= gran canaria> gran canaria</option><option  value=algarve>algarve</option><option  value=LANZAROTE GETAWAY>LANZAROTE GETAWAY</option><option  value=cyprus>cyprus</option><option  value=kos>kos</option><option  value=corfu>corfu</option><option  value=tenerife>tenerife</option><option  value= CRETE> CRETE</option><option  value=BENIDORM>BENIDORM</option><option  value=COSTA DEL SOL>COSTA DEL SOL</option><option  value=costa_del_sol>costa_del_sol</option><option  value=crete>crete</option><option  value=turkey>turkey</option><option  value=fuerteventura>fuerteventura</option><option  value=majorca>majorca</option><option  value=mallorca>mallorca</option><option  value=benidorm>benidorm</option><option  value=halkidiki>halkidiki</option><option  value=madeira>madeira</option><option  value=croatia>croatia</option><option  value=rhodes>rhodes</option><option  value=hurghada>hurghada</option><option  value= venice city> venice city</option><option  value=venice>venice</option><option  value=hurghada>hurghada</option><option  value=hurghada>hurghada</option><option  value=madeira>madeira</option><option  value=venice>venice</option><option  value=venice>venice</option><option  value=Krakow>Krakow</option><option  value=EGYPT>EGYPT</option><option  value=PRAGUE>PRAGUE</option><option  value=ICELAND>ICELAND</option><option  value=BENALMADENA>BENALMADENA</option><option  value=GRAN-CANARIA>GRAN-CANARIA</option><option  value=Marne-la-Vallee>Marne-la-Vallee</option><option  value=Berlin>Berlin</option><option  value=ROME>ROME</option><option  value=Disneyland Paris>Disneyland Paris</option><option  value=Disneyland-Paris>Disneyland-Paris</option><option  value=Jersey>Jersey</option><option  value=Argassi>Argassi</option><option  value=Greece>Greece</option><option  value=New-York-City>New-York-City</option><option  value=Sharm-El-Sheikh>Sharm-El-Sheikh</option><option  value=Budapest>Budapest</option><option  value=Balgaria>Balgaria</option><option  value=Portugal>Portugal</option><option  value=Bulgaria>Bulgaria</option><option  value=Menorca>Menorca</option><option  value=Lisbon>Lisbon</option><option  value=Vienna>Vienna</option><option  value=Psalidi_Greece>Psalidi_Greece</option><option  value=Cancun_Mexico>Cancun_Mexico</option><option  value=Kallithea_Greece>Kallithea_Greece</option><option  value=Malta>Malta</option><option  value=Paphos_Cyprus>Paphos_Cyprus</option><option  value=Antigua>Antigua</option><option  value=tenerife.>tenerife.</option><option  value=tenerife_spain>tenerife_spain</option><option  value=Costa_del_sol>Costa_del_sol</option><option  value=DISNEYLAND_PARIS>DISNEYLAND_PARIS</option><option  value=Manavgat_Turkey>Manavgat_Turkey</option><option  value=Gran_Canaria>Gran_Canaria</option><option  value=Sharm_El_Sheikh>Sharm_El_Sheikh</option><option  value=St._Lucia>St._Lucia</option><option  value=Las_Vegas>Las_Vegas</option><option  value=Mestre_Italy>Mestre_Italy</option><option  value=New_York_City>New_York_City</option><option  value=Venice_Italy>Venice_Italy</option><option  value=NEW_YORK_w/Optional_Cruise>NEW_YORK_w/Optional_Cruise</option><option  value=Marne_la_Vallee>Marne_la_Vallee</option><option  value=Mauritius>Mauritius</option><option  value=NEW_YORK_w/including_Full_Island_Cruise>NEW_YORK_w/including_Full_Island_Cruise</option><option  value=malaga>malaga</option><option  value=Sardinia_Italy>Sardinia_Italy</option><option  value=VENICE w/ISLAND HOPPING TOUR>VENICE w/ISLAND HOPPING TOUR</option><option  value=VENICE_w/ISLAND_HOPPING_TOUR>VENICE_w/ISLAND_HOPPING_TOUR</option><option  value=Costa_Del_Sol>Costa_Del_Sol</option><option  value=Kandy_Sri_Lanka>Kandy_Sri_Lanka</option><option  value=Sri_Lanka>Sri_Lanka</option><option  value=DISNEYLAND_PARIS_Inc_Park_Tickets>DISNEYLAND_PARIS_Inc_Park_Tickets</option><option  value=Italy>Italy</option><option  value=LAKE_GARDA>LAKE_GARDA</option><option  value=BUDAPEST w/River Cruise>BUDAPEST w/River Cruise</option><option  value=BUDAPEST_w/River_Cruise>BUDAPEST_w/River_Cruise</option><option  value=Miami_Beach>Miami_Beach</option><option  value=PHUKET_w/OPTIONAL_KOH_PHI_PHI_TOUR>PHUKET_w/OPTIONAL_KOH_PHI_PHI_TOUR</option><option  value=SORRENTO_ITALY>SORRENTO_ITALY</option><option  value=POLAND>POLAND</option><option  value=Amsterdam>Amsterdam</option><option  value=NEW_YORK_w/FULL_ISLAND_CRUISE>NEW_YORK_w/FULL_ISLAND_CRUISE</option><option  value=KRAKOW_w/SCHINDLER'S_LIST_FACTORY_TOUR>KRAKOW_w/SCHINDLER'S_LIST_FACTORY_TOUR</option><option  value=	KRAKOW_w/SCHINDLERS_LIST_FACTORY_TOUR>	KRAKOW_w/SCHINDLERS_LIST_FACTORY_TOUR</option><option  value=SICILY>SICILY</option><option  value=PERUGIA>PERUGIA</option><option  value=Marina>Marina</option><option  value=SOUTHERN_ITALY_BEACH_Carovigno>SOUTHERN_ITALY_BEACH_Carovigno</option><option  value=MONTEGO>MONTEGO</option><option  value=Jamaica,_Montego_Bay>Jamaica,_Montego_Bay</option><option  value=Jamaica_Montego_Bay>Jamaica_Montego_Bay</option><option  value=porto>porto</option><option  value=BARCELONA>BARCELONA</option><option  value=miami>miami</option><option  value=LAKE>LAKE</option><option  value=SAN_FRANCISCO>SAN_FRANCISCO</option><option  value=SEVILLE>SEVILLE</option><option  value=KENYA>KENYA</option><option  value=COSTA BRAVA>COSTA BRAVA</option><option  value=COSTA_BRAVA>COSTA_BRAVA</option><option  value=BANKOK>BANKOK</option><option  value=THAILAND_BEACH>THAILAND_BEACH</option><option  value=SAINT>SAINT</option><option  value=GOA>GOA</option><option  value=NICE>NICE</option><option  value=Praslin_Island_Seychelles>Praslin_Island_Seychelles</option><option  value=Hong_Kong>Hong_Kong</option><option  value=Jimbaran_Indonesia>Jimbaran_Indonesia</option><option  value=Bali>Bali</option><option  value=NAPLES>NAPLES</option><option  value=MADRID>MADRID</option><option  value=RAS AL KHAIMAH>RAS AL KHAIMAH</option><option  value=Ras_Al_Khaimah>Ras_Al_Khaimah</option><option  value=SPLIT>SPLIT</option><option  value=Lisbon_-_Including_Tram_Tour >Lisbon_-_Including_Tram_Tour </option><option  value=Iceland_,_Inc_Northern_Lights_Tour>Iceland_,_Inc_Northern_Lights_Tour</option><option  value=Iceland,_Inc_Northern_Lights_Tour>Iceland,_Inc_Northern_Lights_Tour</option><option  value=Monte_Carlo>Monte_Carlo</option><option  value=Dominican_Republic>Dominican_Republic</option><option  value=Mombasa>Mombasa</option><option  value=Aruba>Aruba</option><option  value=Athens>Athens</option><option  value=Maldives>Maldives</option><option  value=TOBAGO>TOBAGO</option><option  value=COSTA_BRAVA>COSTA_BRAVA</option><option  value=Thailand_Twin_Center>Thailand_Twin_Center</option><option  value=FLORENCE>FLORENCE</option><option  value=PARIS>PARIS</option><option  value=MEXICO>MEXICO</option><option  value=LISBON>LISBON</option><option  value=PAPHOS>PAPHOS</option><option  value=BRUGES>BRUGES</option><option  value=ISTANBUL>ISTANBUL</option><option  value=PISA CITY>PISA CITY</option><option  value=MILAN>MILAN</option><option  value=Paris City>Paris City</option><option  value=DUBLIN>DUBLIN</option><option  value=thailand>thailand</option><option  value=HAMBURG>HAMBURG</option><option  value=BULGARIA>BULGARIA</option><option  value=Salou>Salou</option><option  value=Orlando>Orlando</option><option  value=KISSIMMEE>KISSIMMEE</option><option  value=SICILY>SICILY</option><option  value=TUNISIA>TUNISIA</option><option  value=COPENHAGEN>COPENHAGEN</option><option  value=MALAGA>MALAGA</option><option  value=Tunisia>Tunisia</option><option  value=Calella>Calella</option><option  value=Calella_Spain>Calella_Spain</option><option  value=Calella-Spain>Calella-Spain</option><option  value=PALMA-MALLORCA>PALMA-MALLORCA</option><option  value=Edinburgh>Edinburgh</option><option  value=Belfast>Belfast</option><option  value=Northern-Ireland>Northern-Ireland</option><option  value=Northern_Ireland>Northern_Ireland</option><option  value=Scotland>Scotland</option><option  value=STOCKHOLM>STOCKHOLM</option><option  value=MADRID>MADRID</option><option  value=HARBOUR>HARBOUR</option>					                    		                   
+                              </select>
+                                                        </div>
+                        </div>			  
+
+
+
+
+
+
+
+
+
+
+                      <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">save percent</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" name="save_percent" placeholder="save percent" value="" required>
+                                                        </div>									
+                      </div>
+
+                       <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">Overview</label>
+                          <div class="col-sm-10">
+                              <textarea type="text"  id="editor1" class="form-control" name="description" placeholder="Overview"></textarea>
+                                                        </div>									
+                      </div>
+
+                      <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">location</label>
+                          <div class="col-sm-10">
+                              <input type="url" class="form-control" name="location" placeholder="location" value="" required>
+                                                        </div>									
+                      </div>
+
+
+                      <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">online booking button</label>
+                          <div class="col-sm-10">
+                              <input type="url" class="form-control" name="online_booking_btn" placeholder="online book link" value="">
+                                                        </div>									
+                      </div>
+
+                       <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">Deal Highlights</label>
+                          <div class="after-add-more form-group">
+                          <div class="col-sm-7">
+                              <input type="text" class="form-control" name="highlights[]" placeholder="Deal Highlights" value="" required>
+                                                        </div>	
+                           <div class="col-sm-2"> 
+                                      <button class="btn btn-success add-more" type="button"><i class="fa fa-plus fa-fw"></i> Add More</button>
+                            </div>
+
+                           <div class="clearfix"></div>
+                            </div>
+                      </div> 
+                      <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">Add Tour if any</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" name="tour" placeholder="Tour" value="">
+                                                        </div>									
+                      </div> 
+
+                       <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">Selected Dates</label>
+                          <div class="col-sm-10">				   		
+                              <input type="text" class="form-control" name="selected_dates" placeholder="Selected Dates" value="">
+                                                        </div>									
+                      </div>
+
+                      <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">Dates</label>
+                          <div class="col-sm-10">
+                              <textarea type="text"  id="editor" class="form-control" name="dates" placeholder="page content for dates" ></textarea>
+                                                        </div>									
+                      </div>					
+                       <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">Deal of week link</label>
+                          <div class="col-sm-10">				   		
+                              <input type="url" class="form-control" name="deal_week" placeholder="deal_week" value="" >
+                                                        </div>									
+                      </div>
+                      <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">phone_num</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" name="phone_num" placeholder="phone_num" value="" required>
+                                                        </div>									
+                      </div>
+                      <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">Theme ID</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" name="theme_id" placeholder="theme_id" value="">
+                                                        </div>									
+                      </div>
+                       <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">Email Send Date</label>
+                          <div class="col-sm-10">
+                              <input type="date" class="form-control" name="senddate" placeholder="senddate" value="" required>
+                                                        </div>									
+                      </div>
+                       <div class="form-group">
+                          <label for="focusedinput" class="col-sm-2 control-label">Deal of week Image link</label>
+                          <div class="col-sm-10">				   		
+                              <input type="url" class="form-control" name="deal_week_img" placeholder="deal_week_img" value="" >
+                                                        </div>									
+                      </div>
+
+                      <div class="form-group hide">
+                          <label for="focusedinput" class="col-sm-2 control-label">Select Images folder of Hotel</label>
+                          <div class="col-sm-10">
+                          <select class="form-control" name="img_folder">
+                              <option value>Select Hotel Images</option>
+                              <option $seleted value=PureWhite>PureWhite</option><option $seleted value=Apartmentsk>Apartmentsk</option><option $seleted value=BayTortuga>BayTortuga</option><option $seleted value=BayTortuga>BayTortuga</option><option $seleted value=coverotanaresort>coverotanaresort</option><option $seleted value=ALGARVE>ALGARVE</option><option $seleted value=RHODES>RHODES</option><option $seleted value=CORFU>CORFU</option><option $seleted value=MARMARIS>MARMARIS</option><option $seleted value=CROATIA>CROATIA</option><option $seleted value=SANTORINI>SANTORINI</option><option $seleted value=ZANTE>ZANTE</option><option $seleted value=KOS>KOS</option><option $seleted value=MADEIRA>MADEIRA</option><option $seleted value=CYPRUS>CYPRUS</option><option $seleted value=BARBADOS>BARBADOS</option><option $seleted value=BODRUM>BODRUM</option><option $seleted value=IBIZA>IBIZA</option><option $seleted value=CRETE>CRETE</option><option $seleted value=HALKIDIKI>HALKIDIKI</option><option $seleted value=MAJORCA>MAJORCA</option><option $seleted value=TURKEY>TURKEY</option><option $seleted value=ANTALYA>ANTALYA</option><option $seleted value=DALAMAN>DALAMAN</option><option $seleted value=TENERIFE>TENERIFE</option><option $seleted value=TALLINN>TALLINN</option><option $seleted value=COST-DEL-SOL>COST-DEL-SOL</option><option $seleted value=COSTADELSOL>COSTADELSOL</option><option $seleted value=gran_canaria>gran_canaria</option><option $seleted value=fuerteventura>fuerteventura</option><option $seleted value=lanzarote>lanzarote</option><option $seleted value=marrakech>marrakech</option><option $seleted value=algarve.jpg>algarve.jpg</option><option $seleted value=algarve>algarve</option><option $seleted value=cyprus>cyprus</option><option $seleted value=kos>kos</option><option $seleted value=kos>kos</option><option $seleted value=corfu>corfu</option><option $seleted value=tenerife>tenerife</option><option $seleted value=costa_del_sol>costa_del_sol</option><option $seleted value=crete>crete</option><option $seleted value=turkey>turkey</option><option $seleted value=mallorca>mallorca</option><option $seleted value=benidorm>benidorm</option><option $seleted value=madeira>madeira</option><option $seleted value=corfu>corfu</option><option $seleted value=halkidiki>halkidiki</option><option $seleted value=lanzarote_exclusive_2020_11_2.jpg>lanzarote_exclusive_2020_11_2.jpg</option><option $seleted value=tenerife>tenerife</option><option $seleted value=croatia>croatia</option><option $seleted value=majorca>majorca</option><option $seleted value=rhodes>rhodes</option><option $seleted value=venice>venice</option><option $seleted value=hurghada>hurghada</option>                  
+                          </select>
+
+                          </div>									
+                      </div>
+
+                      <div class="form-group">
+                             <label class="col-sm-3 control-label">Slider Images:</label>
+                             <div class="col-sm-4">
+                                  <input type="file" multiple class="form-control" name="uploadedimages[]" accept="image/x-png, image/gif, image/jpeg" />
+
+                              </div>									
+                      </div>	
+
+                  </div><!-- /.box-body -->						 		
+                  <div class="box-footer">
+                      <a class="btn btn-default" href="https://emails.bestonlineholidays.co.uk/admin/travelzoo">Cancel</a>
+                      <button class="btn btn-info pull-right" type="submit" >ADD</button>
+                  </div>    					
+                  </form>	
+              </div><!-- /.box -->             
+          </div><!--/.col (right) -->
+      </div>   <!-- /.row -->
+  </section><!-- /.content -->
+
+
+  <!-- Copy Fields-These are the fields which we get through jquery and then add after the above input,-->
+  <div class="copy-fields hide">
+  <div class="control-group">
+      <label for="focusedinput" class="col-sm-2 control-label"></label>
+      <div class="col-sm-8">
+            <input type="text" class="form-control" name="highlights[]" placeholder="Deal Highlights" value="" required>
+                  </div>
+       <div class="col-sm-2"> 
+              <button class="btn btn-danger remove" type="button"><i class="fa fa-remove fa-fw"></i> Remove</button>
+        </div>
+      </div>
+       <div class="clearfix"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js" type="446035282eb78d46cc26cef2-text/javascript"></script>
+  <script type="446035282eb78d46cc26cef2-text/javascript">
+
+      document.addEventListener("DOMContentLoaded", function () {
+          //CKEDITOR
+          //initSample();
+          CKEDITOR.replace('editor', {
+              filebrowserBrowseUrl: '/admin/system_settings/browse',
+              filebrowserUploadUrl: '/admin/system_settings/upload'
+          });
+          CKEDITOR.replace('editor1', {
+              filebrowserBrowseUrl: '/admin/system_settings/browse',
+              filebrowserUploadUrl: '/admin/system_settings/upload'
+          });
+
+      });
+
+
+          $(document).ready(function() {
+      //here first get the contents of the div with name class copy-fields and add it to after "after-add-more" div class.
+        $(".add-more").click(function(){ 
+            var html = $(".copy-fields").html();
+            $(".after-add-more").after(html);
+        });
+      //here it will remove the current value of the remove button which has been pressed
+        $("body").on("click",".remove",function(){ 
+            $(this).parents(".control-group").remove();
+        });
+
+         $('#chkBoxHelp').click(function () {
+      if ($(this).is(':checked')) {
+         $("#getTerms").modal("show");
+      }
+
+
+  });
+
+      });
+
+  </script>
+  
+
+                <!-- /.content --> 
+            </div>
+            <!-- /.content-wrapper --> 
+
+            <!-- Main Footer -->
+            <footer class="main-footer"> 
+                <!-- To the right --> 
+
+                <!-- Default to the left --> 
+                <strong>Copyright &copy; 2015 <a href="#">bookitnow</a>.</strong> All rights reserved. </footer>
+
+        </div>			  
+        <script type="446035282eb78d46cc26cef2-text/javascript" src="https://emails.bestonlineholidays.co.uk/assets/js/jquery.min.js"></script><script type="446035282eb78d46cc26cef2-text/javascript" src="https://emails.bestonlineholidays.co.uk/assets/js/bootstrap.min.js"></script><script type="446035282eb78d46cc26cef2-text/javascript" src="https://emails.bestonlineholidays.co.uk/assets/js/admin1/app.min.js"></script><script type="446035282eb78d46cc26cef2-text/javascript" src="https://emails.bestonlineholidays.co.uk/assets/js/admin/ckeditor/ckeditor.js"></script><script type="446035282eb78d46cc26cef2-text/javascript" src="https://emails.bestonlineholidays.co.uk/assets/js/admin/ckeditor/sample.js"></script> 
+        <script type="446035282eb78d46cc26cef2-text/javascript">
+            function isNumber(event) {
+                var charCode = (event.which) ? event.which : event.keyCode;
+                if (charCode > 31 && (charCode < 48 || charCode > 57))
+                    return false;
+                return true;
+            }
+            $(function () {
+                if ($(".table").length)
+                    $(".table").not("#example").DataTable({
+                        "scrollX": true,
+                    });
+            });
+
+            function blockCustomTabs(e) {
+                $.blockUI.defaults.css = {};
+                $(e).block({
+                    message: '<div><img src="/images/loader-bar.gif" alt=""  width="225px"/></div>',
+                    overlayCSS: {backgroundColor: '#fff'}
+                });
+            }
+            function unblockCustomTabs(e) {
+                $(e).unblock();
+            }
+
+
+
+        </script>
+        <script type="446035282eb78d46cc26cef2-text/javascript">
+            $(function () {
+        $('.js-example-basic-single').select2();      
+            })
+
+        </script>
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="446035282eb78d46cc26cef2-|49" defer></script></body>
+</html>
+
+
+
